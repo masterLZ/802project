@@ -1,0 +1,12 @@
+*.dll
+*.aliases
+*.lvlps
+*.bas
+*.tif
+*.doc
+
+*.h
+*.lib
+*.pas
+*.lib
+*.html
