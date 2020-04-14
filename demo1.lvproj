@@ -20,14 +20,16 @@
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
-				<Item Name="Scope1.vi" Type="VI" URL="../../界面/界面/Scope1.vi"/>
+				<Item Name="Scope1.vi" Type="VI" URL="../示波器/Scope1.vi"/>
 			</Item>
 			<Item Name="Power/Energy" Type="Folder">
 				<Item Name="EnergyMeter Read.vi" Type="VI" URL="../功率能量计/EnergyMeter Read.vi"/>
 				<Item Name="ResetEnergyMeterRange.vi" Type="VI" URL="../功率能量计/ResetEnergyMeterRange.vi"/>
 				<Item Name="PowerMeter Read.vi" Type="VI" URL="../功率能量计/PowerMeter Read.vi"/>
 			</Item>
-			<Item Name="SpectroMeter" Type="Folder"/>
+			<Item Name="SpectroMeter" Type="Folder">
+				<Item Name="SpectroMeterRead.vi" Type="VI" URL="../光谱仪/SpectroMeterRead.vi"/>
+			</Item>
 		</Item>
 		<Item Name="Init" Type="Folder">
 			<Item Name="InitAll.vi" Type="VI" URL="../InitAll.vi"/>
@@ -64,6 +66,7 @@
 			<Item Name="MeasurementSelect.vi" Type="VI" URL="../UI组件/MeasurementSelect.vi"/>
 			<Item Name="ListBox XControl.xctl" Type="XControl" URL="../UI组件/Selectable ListBox xControl/ListBox XControl.xctl"/>
 			<Item Name="KeyGray.vi" Type="VI" URL="../UI组件/KeyGray.vi"/>
+			<Item Name="loadSubVI.vi" Type="VI" URL="../UI组件/loadSubVI.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
 			<Item Name="ConnectCheckReport.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheckReport.vi"/>
@@ -75,8 +78,6 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
-		<Item Name="SpectroMeterRead.vi" Type="VI" URL="../光谱仪/SpectroMeterRead.vi"/>
-		<Item Name="SpectroMeterRead1.vi" Type="VI" URL="../光谱仪/SpectroMeterRead1.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -98,9 +99,6 @@
 			</Item>
 			<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
-			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
-			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
-			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -109,6 +107,9 @@
 			</Item>
 			<Item Name="Toggle Symbol.vi" Type="VI" URL="../UI组件/Selectable ListBox xControl/SubVIs/Toggle Symbol.vi"/>
 			<Item Name="VsyCam.dll" Type="Document" URL="../相机/VsyCam.dll"/>
+			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
+			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
+			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
