@@ -12,9 +12,10 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="全局变量" Type="Folder">
-			<Item Name="globalMessage.vi" Type="VI" URL="../globalMessage.vi"/>
+			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
 			<Item Name="Reslut.vi" Type="VI" URL="../Reslut.vi"/>
-			<Item Name="参数.vi" Type="VI" URL="../参数.vi"/>
+			<Item Name="参数.vi" Type="VI" URL="../参数/参数.vi"/>
+			<Item Name="参数设置.vi" Type="VI" URL="../参数/参数设置.vi"/>
 		</Item>
 		<Item Name="Control" Type="Folder">
 			<Item Name="Polarzation" Type="Folder">
@@ -54,13 +55,12 @@
 			<Item Name="Polarmeter_param.vi" Type="VI" URL="../参数/Polarmeter_param.vi"/>
 			<Item Name="General_param.vi" Type="VI" URL="../参数/General_param.vi"/>
 			<Item Name="Scope_param.vi" Type="VI" URL="../参数/Scope_param.vi"/>
-			<Item Name="参数设置.vi" Type="VI" URL="../参数设置.vi"/>
 			<Item Name="ParamSetAll.vi" Type="VI" URL="../参数/ParamSetAll.vi"/>
 		</Item>
 		<Item Name="Error" Type="Folder">
-			<Item Name="ErrorHandle.vi" Type="VI" URL="../ErrorHandle.vi"/>
+			<Item Name="ErrorHandle.vi" Type="VI" URL="../MessageHandle/ErrorHandle.vi"/>
 			<Item Name="RunLog.vi" Type="VI" URL="../MessageHandle/RunLog.vi"/>
-			<Item Name="ErrorAdd.vi" Type="VI" URL="../ErrorAdd.vi"/>
+			<Item Name="ErrorAdd.vi" Type="VI" URL="../MessageHandle/ErrorAdd.vi"/>
 		</Item>
 		<Item Name="UI" Type="Folder">
 			<Item Name="KeyGray_normalbool.vi" Type="VI" URL="../UI组件/KeyGray_normalbool.vi"/>
