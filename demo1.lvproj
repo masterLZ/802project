@@ -13,9 +13,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
-			<Item Name="Reslut.vi" Type="VI" URL="../Reslut.vi"/>
+			<Item Name="Reslut.vi" Type="VI" URL="../InOut/Reslut.vi"/>
+			<Item Name="AllPath.vi" Type="VI" URL="../Init/AllPath.vi"/>
 			<Item Name="参数.vi" Type="VI" URL="../参数/参数.vi"/>
-			<Item Name="参数设置.vi" Type="VI" URL="../参数/参数设置.vi"/>
 		</Item>
 		<Item Name="Control" Type="Folder">
 			<Item Name="Polarzation" Type="Folder">
@@ -24,6 +24,7 @@
 			<Item Name="Camera" Type="Folder">
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
+				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
 				<Item Name="Scope1.vi" Type="VI" URL="../示波器/Scope1.vi"/>
@@ -36,15 +37,16 @@
 			<Item Name="SpectroMeter" Type="Folder">
 				<Item Name="SpectroMeterRead.vi" Type="VI" URL="../光谱仪/SpectroMeterRead.vi"/>
 			</Item>
+			<Item Name="WaitMission.vi" Type="VI" URL="../UI组件/WaitMission.vi"/>
 		</Item>
 		<Item Name="Init" Type="Folder">
-			<Item Name="InitAll.vi" Type="VI" URL="../InitAll.vi"/>
+			<Item Name="InitAll.vi" Type="VI" URL="../Init/InitAll.vi"/>
 			<Item Name="CameraInit.vi" Type="VI" URL="../相机/CameraInit.vi"/>
 			<Item Name="ScopeInit.vi" Type="VI" URL="../示波器/ScopeInit.vi"/>
 			<Item Name="PowerMeterInit.vi" Type="VI" URL="../功率能量计/PowerMeterInit.vi"/>
 			<Item Name="EnergyMeterInit.vi" Type="VI" URL="../功率能量计/EnergyMeterInit.vi"/>
 			<Item Name="PolarizationInit.vi" Type="VI" URL="../偏振控制器/PolarizationInit.vi"/>
-			<Item Name="GlobalInit.vi" Type="VI" URL="../GlobalInit.vi"/>
+			<Item Name="GlobalInit.vi" Type="VI" URL="../Init/GlobalInit.vi"/>
 			<Item Name="SpectroMeterInit.vi" Type="VI" URL="../光谱仪/SpectroMeterInit.vi"/>
 		</Item>
 		<Item Name="Parameter and Message" Type="Folder">
@@ -77,11 +79,25 @@
 			<Item Name="EnergyMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/EnergyMeterCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
+		<Item Name="文件输入输出" Type="Folder">
+			<Item Name="基本路径文件" Type="Folder">
+				<Item Name="Report.csv" Type="Document" URL="../data/Report/Report.csv"/>
+				<Item Name="Parameter.csv" Type="Document" URL="../data/参数/Parameter.csv"/>
+				<Item Name="PowerEnergMeter.csv" Type="Document" URL="../data/能量功率数据/PowerEnergMeter.csv"/>
+				<Item Name="Spectrometer.csv" Type="Document" URL="../data/光谱仪数据/Spectrometer.csv"/>
+				<Item Name="Near.png" Type="Document" URL="../data/近远场数据/近场图/Near.png"/>
+				<Item Name="Far.png" Type="Document" URL="../data/近远场数据/远场图/Far.png"/>
+				<Item Name="Polarmeter.csv" Type="Document" URL="../data/偏振数据/Polarmeter.csv"/>
+				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
+			</Item>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
+		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
-		<Item Name="WaitMission.vi" Type="VI" URL="../UI组件/WaitMission.vi"/>
-		<Item Name="子面板测试.vi" Type="VI" URL="../子面板测试.vi"/>
+		<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
+		<Item Name="WriteAll.vi" Type="VI" URL="../InOut/WriteAll.vi"/>
+		<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
+		<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -100,8 +116,14 @@
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 			</Item>
-			<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -291,6 +313,59 @@
 				<Property Name="Source[0].tag" Type="Ref">/我的电脑/程序生成规范/Demo</Property>
 				<Property Name="Source[0].type" Type="Str">EXE</Property>
 				<Property Name="SourceCount" Type="Int">1</Property>
+			</Item>
+			<Item Name="文件生成测试" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{43EB0A21-08BC-4B81-B36F-EA459D3D85EE}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{1F316841-299B-4B2C-B098-2BE314C7664C}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{B1A8A0D3-3C74-4867-9D46-5F76DF34C1F5}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">文件生成测试</Property>
+				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../NI_AB_PROJECTNAME/我的应用程序</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{94FE7881-40CD-4AD2-8FC2-4AF8DC99B2EE}</Property>
+				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">应用程序.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/应用程序.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
+				<Property Name="Destination[1].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data</Property>
+				<Property Name="Destination[2].destName" Type="Str">能量功率数据</Property>
+				<Property Name="Destination[2].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data/能量功率数据</Property>
+				<Property Name="Destination[3].destName" Type="Str">偏振数据</Property>
+				<Property Name="Destination[3].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data/偏振数据</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F45947E2-9502-4942-9ED7-049225FA824C}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/WriteAll.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">1</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/Report.csv</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/Parameter.csv</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/PowerEnergMeter.csv</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">文件生成测试</Property>
+				<Property Name="TgtF_internalName" Type="Str">文件生成测试</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">版权 2020 </Property>
+				<Property Name="TgtF_productName" Type="Str">文件生成测试</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{C6087A04-2A69-4876-A851-E31D4F7533E8}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">应用程序.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>

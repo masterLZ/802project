@@ -11,3 +11,8 @@
 *.lib
 *.html
 *.rar
+/data/近远场数据/近场图/*.png
+/data/光谱仪数据/*.csv
+/data/近远场数据/远场图/*.png
+/data/偏振数据/*.csv
+*.csv
