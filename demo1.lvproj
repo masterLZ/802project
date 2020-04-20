@@ -11,6 +11,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="全局变量" Type="Folder">
+			<Item Name="globalMessage.vi" Type="VI" URL="../globalMessage.vi"/>
+			<Item Name="Reslut.vi" Type="VI" URL="../Reslut.vi"/>
+			<Item Name="参数.vi" Type="VI" URL="../参数.vi"/>
+		</Item>
 		<Item Name="Control" Type="Folder">
 			<Item Name="Polarzation" Type="Folder">
 				<Item Name="PolarizationRead.vi" Type="VI" URL="../偏振控制器/PolarizationRead.vi"/>
@@ -42,8 +47,6 @@
 			<Item Name="SpectroMeterInit.vi" Type="VI" URL="../光谱仪/SpectroMeterInit.vi"/>
 		</Item>
 		<Item Name="Parameter and Message" Type="Folder">
-			<Item Name="参数.vi" Type="VI" URL="../参数.vi"/>
-			<Item Name="globalMessage.vi" Type="VI" URL="../globalMessage.vi"/>
 			<Item Name="PowerEnergyMeter_param.vi" Type="VI" URL="../参数/PowerEnergyMeter_param.vi"/>
 			<Item Name="NearFieldCamera_param.vi" Type="VI" URL="../参数/NearFieldCamera_param.vi"/>
 			<Item Name="FarFieldCamera_param.vi" Type="VI" URL="../参数/FarFieldCamera_param.vi"/>
@@ -51,7 +54,6 @@
 			<Item Name="Polarmeter_param.vi" Type="VI" URL="../参数/Polarmeter_param.vi"/>
 			<Item Name="General_param.vi" Type="VI" URL="../参数/General_param.vi"/>
 			<Item Name="Scope_param.vi" Type="VI" URL="../参数/Scope_param.vi"/>
-			<Item Name="Reslut.vi" Type="VI" URL="../Reslut.vi"/>
 			<Item Name="参数设置.vi" Type="VI" URL="../参数设置.vi"/>
 			<Item Name="ParamSetAll.vi" Type="VI" URL="../参数/ParamSetAll.vi"/>
 		</Item>
