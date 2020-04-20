@@ -11,6 +11,23 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="文件输入输出" Type="Folder">
+			<Item Name="基本路径文件" Type="Folder">
+				<Item Name="Report.csv" Type="Document" URL="../data/Report/Report.csv"/>
+				<Item Name="Parameter.csv" Type="Document" URL="../data/参数/Parameter.csv"/>
+				<Item Name="PowerEnergMeter.csv" Type="Document" URL="../data/能量功率数据/PowerEnergMeter.csv"/>
+				<Item Name="Spectrometer.csv" Type="Document" URL="../data/光谱仪数据/Spectrometer.csv"/>
+				<Item Name="Near.png" Type="Document" URL="../data/近远场数据/近场图/Near.png"/>
+				<Item Name="Far.png" Type="Document" URL="../data/近远场数据/远场图/Far.png"/>
+				<Item Name="Polarmeter.csv" Type="Document" URL="../data/偏振数据/Polarmeter.csv"/>
+				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
+			</Item>
+			<Item Name="WritePolaration.vi" Type="VI" URL="../InOut/WritePolaration.vi"/>
+			<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
+			<Item Name="WriteScope.vi" Type="VI" URL="../InOut/WriteScope.vi"/>
+			<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
+			<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
+		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
 			<Item Name="Reslut.vi" Type="VI" URL="../InOut/Reslut.vi"/>
@@ -41,13 +58,13 @@
 		</Item>
 		<Item Name="Init" Type="Folder">
 			<Item Name="InitAll.vi" Type="VI" URL="../Init/InitAll.vi"/>
-			<Item Name="CameraInit.vi" Type="VI" URL="../相机/CameraInit.vi"/>
-			<Item Name="ScopeInit.vi" Type="VI" URL="../示波器/ScopeInit.vi"/>
 			<Item Name="PowerMeterInit.vi" Type="VI" URL="../功率能量计/PowerMeterInit.vi"/>
 			<Item Name="EnergyMeterInit.vi" Type="VI" URL="../功率能量计/EnergyMeterInit.vi"/>
 			<Item Name="PolarizationInit.vi" Type="VI" URL="../偏振控制器/PolarizationInit.vi"/>
-			<Item Name="GlobalInit.vi" Type="VI" URL="../Init/GlobalInit.vi"/>
+			<Item Name="ScopeInit.vi" Type="VI" URL="../示波器/ScopeInit.vi"/>
 			<Item Name="SpectroMeterInit.vi" Type="VI" URL="../光谱仪/SpectroMeterInit.vi"/>
+			<Item Name="CameraInit.vi" Type="VI" URL="../相机/CameraInit.vi"/>
+			<Item Name="GlobalInit.vi" Type="VI" URL="../Init/GlobalInit.vi"/>
 		</Item>
 		<Item Name="Parameter and Message" Type="Folder">
 			<Item Name="PowerEnergyMeter_param.vi" Type="VI" URL="../参数/PowerEnergyMeter_param.vi"/>
@@ -79,25 +96,11 @@
 			<Item Name="EnergyMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/EnergyMeterCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
-		<Item Name="文件输入输出" Type="Folder">
-			<Item Name="基本路径文件" Type="Folder">
-				<Item Name="Report.csv" Type="Document" URL="../data/Report/Report.csv"/>
-				<Item Name="Parameter.csv" Type="Document" URL="../data/参数/Parameter.csv"/>
-				<Item Name="PowerEnergMeter.csv" Type="Document" URL="../data/能量功率数据/PowerEnergMeter.csv"/>
-				<Item Name="Spectrometer.csv" Type="Document" URL="../data/光谱仪数据/Spectrometer.csv"/>
-				<Item Name="Near.png" Type="Document" URL="../data/近远场数据/近场图/Near.png"/>
-				<Item Name="Far.png" Type="Document" URL="../data/近远场数据/远场图/Far.png"/>
-				<Item Name="Polarmeter.csv" Type="Document" URL="../data/偏振数据/Polarmeter.csv"/>
-				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
-			</Item>
-		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
-		<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
 		<Item Name="WriteAll.vi" Type="VI" URL="../InOut/WriteAll.vi"/>
-		<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
-		<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
+		<Item Name="WriteSpectroMeter.vi" Type="VI" URL="../InOut/WriteSpectroMeter.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -123,6 +126,16 @@
 				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
