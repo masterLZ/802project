@@ -100,7 +100,7 @@
 		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="WriteAll.vi" Type="VI" URL="../InOut/WriteAll.vi"/>
-		<Item Name="WriteSpectroMeter.vi" Type="VI" URL="../InOut/WriteSpectroMeter.vi"/>
+		<Item Name="WriteNearFar.vi" Type="VI" URL="../InOut/WriteNearFar.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -136,6 +136,13 @@
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="IMAQ Write TIFF File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write TIFF File 2"/>
+				<Item Name="IMAQ Write PNG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write PNG File 2"/>
+				<Item Name="IMAQ Write JPEG2000 File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG2000 File 2"/>
+				<Item Name="IMAQ Write JPEG File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write JPEG File 2"/>
+				<Item Name="IMAQ Write Image And Vision Info File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write Image And Vision Info File 2"/>
+				<Item Name="IMAQ Write BMP File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write BMP File 2"/>
+				<Item Name="IMAQ Write File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write File 2"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
