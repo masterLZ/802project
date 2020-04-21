@@ -27,6 +27,11 @@
 			<Item Name="WriteScope.vi" Type="VI" URL="../InOut/WriteScope.vi"/>
 			<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
 			<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
+			<Item Name="ReadPowerEnergyFile.vi" Type="VI" URL="../InOut/ReadPowerEnergyFile.vi"/>
+			<Item Name="ReadPolarzationFile.vi" Type="VI" URL="../InOut/ReadPolarzationFile.vi"/>
+			<Item Name="ReadScopeFile.vi" Type="VI" URL="../InOut/ReadScopeFile.vi"/>
+			<Item Name="ReadSpetroFile.vi" Type="VI" URL="../InOut/ReadSpetroFile.vi"/>
+			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
@@ -143,6 +148,11 @@
 				<Item Name="IMAQ Write Image And Vision Info File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write Image And Vision Info File 2"/>
 				<Item Name="IMAQ Write BMP File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write BMP File 2"/>
 				<Item Name="IMAQ Write File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write File 2"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="IMAQ SetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ SetImageSize"/>
+				<Item Name="IMAQ ReadFile 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile 2"/>
+				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
+				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
