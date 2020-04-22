@@ -23,14 +23,16 @@
 				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
 			</Item>
 			<Item Name="WritePolaration.vi" Type="VI" URL="../InOut/WritePolaration.vi"/>
-			<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
 			<Item Name="WriteScope.vi" Type="VI" URL="../InOut/WriteScope.vi"/>
 			<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
 			<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
+			<Item Name="WriteSpectroMeter.vi" Type="VI" URL="../InOut/WriteSpectroMeter.vi"/>
 			<Item Name="ReadPowerEnergyFile.vi" Type="VI" URL="../InOut/ReadPowerEnergyFile.vi"/>
 			<Item Name="ReadPolarzationFile.vi" Type="VI" URL="../InOut/ReadPolarzationFile.vi"/>
+			<Item Name="WriteNearFar.vi" Type="VI" URL="../InOut/WriteNearFar.vi"/>
 			<Item Name="ReadScopeFile.vi" Type="VI" URL="../InOut/ReadScopeFile.vi"/>
 			<Item Name="ReadSpetroFile.vi" Type="VI" URL="../InOut/ReadSpetroFile.vi"/>
+			<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
 			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
@@ -105,7 +107,7 @@
 		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="WriteAll.vi" Type="VI" URL="../InOut/WriteAll.vi"/>
-		<Item Name="WriteNearFar.vi" Type="VI" URL="../InOut/WriteNearFar.vi"/>
+		<Item Name="保存数据.vi" Type="VI" URL="../InOut/保存数据.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -153,6 +155,8 @@
 				<Item Name="IMAQ ReadFile 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ ReadFile 2"/>
 				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
 				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
