@@ -38,8 +38,8 @@
 		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
-			<Item Name="Reslut.vi" Type="VI" URL="../InOut/Reslut.vi"/>
 			<Item Name="HistoryFile.vi" Type="VI" URL="../HistoryFile.vi"/>
+			<Item Name="Reslut.vi" Type="VI" URL="../InOut/Reslut.vi"/>
 			<Item Name="AllPath.vi" Type="VI" URL="../Init/AllPath.vi"/>
 			<Item Name="参数.vi" Type="VI" URL="../参数/参数.vi"/>
 		</Item>
