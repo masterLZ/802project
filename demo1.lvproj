@@ -27,17 +27,19 @@
 			<Item Name="WriteCSV.vi" Type="VI" URL="../InOut/WriteCSV.vi"/>
 			<Item Name="WritePowerEnergy.vi" Type="VI" URL="../InOut/WritePowerEnergy.vi"/>
 			<Item Name="WriteSpectroMeter.vi" Type="VI" URL="../InOut/WriteSpectroMeter.vi"/>
+			<Item Name="WriteNearFar.vi" Type="VI" URL="../InOut/WriteNearFar.vi"/>
 			<Item Name="ReadPowerEnergyFile.vi" Type="VI" URL="../InOut/ReadPowerEnergyFile.vi"/>
 			<Item Name="ReadPolarzationFile.vi" Type="VI" URL="../InOut/ReadPolarzationFile.vi"/>
-			<Item Name="WriteNearFar.vi" Type="VI" URL="../InOut/WriteNearFar.vi"/>
 			<Item Name="ReadScopeFile.vi" Type="VI" URL="../InOut/ReadScopeFile.vi"/>
 			<Item Name="ReadSpetroFile.vi" Type="VI" URL="../InOut/ReadSpetroFile.vi"/>
+			<Item Name="ReadNearFar.vi" Type="VI" URL="../InOut/ReadNearFar.vi"/>
 			<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
 			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
 			<Item Name="Reslut.vi" Type="VI" URL="../InOut/Reslut.vi"/>
+			<Item Name="HistoryFile.vi" Type="VI" URL="../HistoryFile.vi"/>
 			<Item Name="AllPath.vi" Type="VI" URL="../Init/AllPath.vi"/>
 			<Item Name="参数.vi" Type="VI" URL="../参数/参数.vi"/>
 		</Item>
@@ -106,8 +108,9 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
-		<Item Name="WriteAll.vi" Type="VI" URL="../InOut/WriteAll.vi"/>
 		<Item Name="保存数据.vi" Type="VI" URL="../InOut/保存数据.vi"/>
+		<Item Name="读取历史数据.vi" Type="VI" URL="../InOut/读取历史数据.vi"/>
+		<Item Name="ReadAllFile.vi" Type="VI" URL="../InOut/ReadAllFile.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -157,6 +160,7 @@
 				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -380,7 +384,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{F45947E2-9502-4942-9ED7-049225FA824C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/WriteAll.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/依赖关系/内存中的项/WriteAllFile.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">1</Property>
