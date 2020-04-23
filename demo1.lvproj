@@ -33,7 +33,10 @@
 			<Item Name="ReadScopeFile.vi" Type="VI" URL="../InOut/ReadScopeFile.vi"/>
 			<Item Name="ReadSpetroFile.vi" Type="VI" URL="../InOut/ReadSpetroFile.vi"/>
 			<Item Name="ReadNearFar.vi" Type="VI" URL="../InOut/ReadNearFar.vi"/>
+			<Item Name="ReadAllFile.vi" Type="VI" URL="../InOut/ReadAllFile.vi"/>
 			<Item Name="Time2String.vi" Type="VI" URL="../InOut/Time2String.vi"/>
+			<Item Name="读取历史数据.vi" Type="VI" URL="../InOut/读取历史数据.vi"/>
+			<Item Name="保存数据.vi" Type="VI" URL="../InOut/保存数据.vi"/>
 			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
@@ -103,14 +106,13 @@
 			<Item Name="PowerMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PowerMeterCheck.vi"/>
 			<Item Name="ScopeCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ScopeCheck.vi"/>
 			<Item Name="EnergyMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/EnergyMeterCheck.vi"/>
+			<Item Name="CameraConnectCheck.vi" Type="VI" URL="../相机/CameraConnectCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="StartMeasure.vi" Type="VI" URL="../Init/StartMeasure.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
-		<Item Name="保存数据.vi" Type="VI" URL="../InOut/保存数据.vi"/>
-		<Item Name="读取历史数据.vi" Type="VI" URL="../InOut/读取历史数据.vi"/>
-		<Item Name="ReadAllFile.vi" Type="VI" URL="../InOut/ReadAllFile.vi"/>
+		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
+		<Item Name="CamNear.vi" Type="VI" URL="../相机/CamNear.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
