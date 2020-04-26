@@ -1,4 +1,4 @@
-*.dll
+
 *.aliases
 *.lvlps
 *.bas
@@ -6,10 +6,7 @@
 *.doc
 *.ico
 
-*.h
-*.lib
 *.pas
-*.lib
 *.html
 *.rar
 *.png
