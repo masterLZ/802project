@@ -114,6 +114,7 @@
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="Set Default.vi" Type="VI" URL="../UI组件/Set Default.vi"/>
 		<Item Name="Write_param.vi" Type="VI" URL="../InOut/Write_param.vi"/>
+		<Item Name="Read_param.vi" Type="VI" URL="../InOut/Read_param.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
