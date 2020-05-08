@@ -45,6 +45,11 @@
 			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Selected Items []</Property>
 			<Item Name="Selected Items Read.vi" Type="Property VI" URL="../Property/Selected Items/Selected Items Read.vi"/>
 		</Item>
+		<Item Name="CustomSelect" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">CustomSelect</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">CustomSelect</Property>
+			<Item Name="Custom Selection.vi" Type="Property VI" URL="../Methods/Custom Selection.vi"/>
+		</Item>
 	</Item>
 	<Item Name="Data ListBox.ctl" Type="Ability VI" URL="../Data ListBox.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">Data</Property>

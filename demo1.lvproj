@@ -21,6 +21,7 @@
 				<Item Name="Far.png" Type="Document" URL="../data/近远场数据/远场图/Far.png"/>
 				<Item Name="Polarmeter.csv" Type="Document" URL="../data/偏振数据/Polarmeter.csv"/>
 				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
+				<Item Name="InitParameter.csv" Type="Document" URL="../data/参数/InitParameter.csv"/>
 			</Item>
 			<Item Name="WritePolaration.vi" Type="VI" URL="../InOut/WritePolaration.vi"/>
 			<Item Name="WriteScope.vi" Type="VI" URL="../InOut/WriteScope.vi"/>
