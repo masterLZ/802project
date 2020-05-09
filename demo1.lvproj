@@ -41,6 +41,8 @@
 			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
 			<Item Name="Write_param.vi" Type="VI" URL="../InOut/Write_param.vi"/>
 			<Item Name="Read_param.vi" Type="VI" URL="../InOut/Read_param.vi"/>
+			<Item Name="Set Default.vi" Type="VI" URL="../UI组件/Set Default.vi"/>
+			<Item Name="ConvetToShow.vi" Type="VI" URL="../InOut/ConvetToShow.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
@@ -115,8 +117,6 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
-		<Item Name="Set Default.vi" Type="VI" URL="../UI组件/Set Default.vi"/>
-		<Item Name="ConvetToShow.vi" Type="VI" URL="../InOut/ConvetToShow.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
