@@ -12,5 +12,5 @@
 *.png
 *.csv
 MOXA
-
+*.vascr
 *.tiff

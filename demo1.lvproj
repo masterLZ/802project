@@ -58,8 +58,13 @@
 				<Item Name="PolarizationRead.vi" Type="VI" URL="../偏振控制器/PolarizationRead.vi"/>
 			</Item>
 			<Item Name="Camera" Type="Folder">
+				<Item Name="DivergenceAngle" Type="Folder">
+					<Item Name="CaculateSpotSize .vi" Type="VI" URL="../相机/发散角计算/CaculateSpotSize .vi"/>
+					<Item Name="CaculateDivergenceAngle .vi" Type="VI" URL="../相机/发散角计算/CaculateDivergenceAngle .vi"/>
+				</Item>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
+				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
 				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
@@ -124,7 +129,6 @@
 		<Item Name="LianyiJudgePosition.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiJudgePosition.vi"/>
 		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
-		<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -190,6 +194,8 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
+				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
