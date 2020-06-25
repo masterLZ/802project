@@ -123,6 +123,17 @@
 			<Item Name="CameraConnectCheck.vi" Type="VI" URL="../相机/CameraConnectCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
+		<Item Name="电机" Type="Folder">
+			<Item Name="AxisInit.vi" Type="VI" URL="../电机/AxisInit.vi"/>
+			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
+			<Item Name="MotorRotate.vi" Type="VI" URL="../电机/MotorRotate.vi"/>
+			<Item Name="MotorPosReade.vi" Type="VI" URL="../电机/MotorPosReade.vi"/>
+			<Item Name="MotorShutDown.vi" Type="VI" URL="../电机/MotorShutDown.vi"/>
+			<Item Name="MotorTest.vi" Type="VI" URL="../电机/MotorTest.vi"/>
+			<Item Name="RotateTest.vi" Type="VI" URL="../电机/RotateTest.vi"/>
+			<Item Name="MotorAlltoZero.vi" Type="VI" URL="../电机/MotorAlltoZero.vi"/>
+			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
@@ -130,7 +141,6 @@
 		<Item Name="LianyiJudgePosition.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiJudgePosition.vi"/>
 		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
-		<Item Name="MotorShutDowm.vi" Type="VI" URL="../电机/MotorShutDowm.vi"/>
 		<Item Name="WaitUIShutDown.vi" Type="VI" URL="../WaitUIShutDown.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
@@ -226,6 +236,7 @@
 			<Item Name="SC300Gomm.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Gomm.vi"/>
 			<Item Name="SC300init.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300init.vi"/>
 			<Item Name="Lianyiclose.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/Lianyiclose.vi"/>
+			<Item Name="IMC_Pkg4xxx.lvlib" Type="Library" URL="../../驱动/电机/IMCApp/inc/Labview/32/IMC_Pkg4xxx.lvlib"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
