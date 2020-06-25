@@ -17,6 +17,11 @@
 	</Item>
 	<Item Name="Property" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="CustomSelect" Type="Property Folder">
+			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">CustomSelect</Property>
+			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">CustomSelect</Property>
+			<Item Name="Custom Selection.vi" Type="Property VI" URL="../Methods/Custom Selection.vi"/>
+		</Item>
 		<Item Name="Hide Symbols" Type="Property Folder">
 			<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Hide Symbols</Property>
 			<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Hide Symbols</Property>
@@ -54,6 +59,11 @@
 	</Item>
 	<Item Name="Init ListBox.vi" Type="Ability VI" URL="../Init ListBox.vi">
 		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
+	</Item>
+	<Item Name="setFontSize" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">setFontSize</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">setFontSize</Property>
+		<Item Name="setFontSize.vi" Type="Property VI" URL="../Methods/setFontSize.vi"/>
 	</Item>
 	<Item Name="State ListBox.ctl" Type="Ability VI" URL="../State ListBox.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">State</Property>

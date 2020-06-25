@@ -21,6 +21,7 @@
 				<Item Name="Far.png" Type="Document" URL="../data/近远场数据/远场图/Far.png"/>
 				<Item Name="Polarmeter.csv" Type="Document" URL="../data/偏振数据/Polarmeter.csv"/>
 				<Item Name="Scope.csv" Type="Document" URL="../data/示波器数据/Scope.csv"/>
+				<Item Name="InitParameter.csv" Type="Document" URL="../data/参数/InitParameter.csv"/>
 			</Item>
 			<Item Name="WritePolaration.vi" Type="VI" URL="../InOut/WritePolaration.vi"/>
 			<Item Name="WriteScope.vi" Type="VI" URL="../InOut/WriteScope.vi"/>
@@ -38,6 +39,10 @@
 			<Item Name="读取历史数据.vi" Type="VI" URL="../InOut/读取历史数据.vi"/>
 			<Item Name="保存数据.vi" Type="VI" URL="../InOut/保存数据.vi"/>
 			<Item Name="JointImage.vi" Type="VI" URL="../InOut/JointImage.vi"/>
+			<Item Name="Write_param.vi" Type="VI" URL="../InOut/Write_param.vi"/>
+			<Item Name="Read_param.vi" Type="VI" URL="../InOut/Read_param.vi"/>
+			<Item Name="Set Default.vi" Type="VI" URL="../UI组件/Set Default.vi"/>
+			<Item Name="ConvetToShow.vi" Type="VI" URL="../InOut/ConvetToShow.vi"/>
 		</Item>
 		<Item Name="全局变量" Type="Folder">
 			<Item Name="globalMessage.vi" Type="VI" URL="../参数/globalMessage.vi"/>
@@ -48,11 +53,18 @@
 		</Item>
 		<Item Name="Control" Type="Folder">
 			<Item Name="Polarzation" Type="Folder">
+				<Item Name="PAX_Read.vi" Type="VI" URL="../偏振控制器/PAX_Read.vi"/>
+				<Item Name="PAXStop.vi" Type="VI" URL="../偏振控制器/PAXStop.vi"/>
 				<Item Name="PolarizationRead.vi" Type="VI" URL="../偏振控制器/PolarizationRead.vi"/>
 			</Item>
 			<Item Name="Camera" Type="Folder">
+				<Item Name="DivergenceAngle" Type="Folder">
+					<Item Name="CaculateSpotSize .vi" Type="VI" URL="../相机/发散角计算/CaculateSpotSize .vi"/>
+					<Item Name="CaculateDivergenceAngle .vi" Type="VI" URL="../相机/发散角计算/CaculateDivergenceAngle .vi"/>
+				</Item>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
+				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
 				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
@@ -76,6 +88,7 @@
 			<Item Name="ScopeInit.vi" Type="VI" URL="../示波器/ScopeInit.vi"/>
 			<Item Name="SpectroMeterInit.vi" Type="VI" URL="../光谱仪/SpectroMeterInit.vi"/>
 			<Item Name="CameraInit.vi" Type="VI" URL="../相机/CameraInit.vi"/>
+			<Item Name="PAX_init.vi" Type="VI" URL="../偏振控制器/PAX_init.vi"/>
 			<Item Name="GlobalInit.vi" Type="VI" URL="../Init/GlobalInit.vi"/>
 		</Item>
 		<Item Name="Parameter and Message" Type="Folder">
@@ -100,6 +113,7 @@
 			<Item Name="ListBox XControl.xctl" Type="XControl" URL="../UI组件/Selectable ListBox xControl/ListBox XControl.xctl"/>
 			<Item Name="KeyGray.vi" Type="VI" URL="../UI组件/KeyGray.vi"/>
 			<Item Name="loadSubVI.vi" Type="VI" URL="../UI组件/loadSubVI.vi"/>
+			<Item Name="Wait10sThenAbort.vi" Type="VI" URL="../UI组件/Wait10sThenAbort.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
 			<Item Name="ConnectCheckReport.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheckReport.vi"/>
@@ -109,13 +123,44 @@
 			<Item Name="CameraConnectCheck.vi" Type="VI" URL="../相机/CameraConnectCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
+		<Item Name="电机" Type="Folder">
+			<Item Name="AxisInit.vi" Type="VI" URL="../电机/AxisInit.vi"/>
+			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
+			<Item Name="MotorRotate.vi" Type="VI" URL="../电机/MotorRotate.vi"/>
+			<Item Name="MotorPosReade.vi" Type="VI" URL="../电机/MotorPosReade.vi"/>
+			<Item Name="MotorShutDown.vi" Type="VI" URL="../电机/MotorShutDown.vi"/>
+			<Item Name="MotorTest.vi" Type="VI" URL="../电机/MotorTest.vi"/>
+			<Item Name="RotateTest.vi" Type="VI" URL="../电机/RotateTest.vi"/>
+			<Item Name="MotorAlltoZero.vi" Type="VI" URL="../电机/MotorAlltoZero.vi"/>
+			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
-		<Item Name="Set Default.vi" Type="VI" URL="../UI组件/Set Default.vi"/>
+		<Item Name="LianyiMove.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiMove.vi"/>
+		<Item Name="LianyiJudgePosition.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiJudgePosition.vi"/>
+		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
+		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
+		<Item Name="WaitUIShutDown.vi" Type="VI" URL="../WaitUIShutDown.vi"/>
+		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
+				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
+				<Item Name="TLPAX Find Resources.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Find Resources.vi"/>
+				<Item Name="TLPAX Set Basic Scan Rate.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Set Basic Scan Rate.vi"/>
+				<Item Name="TLPAX Set Power Auto Range.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Set Power Auto Range.vi"/>
+				<Item Name="TLPAX Set Measurement Mode.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Set Measurement Mode.vi"/>
+				<Item Name="TLPAX Identification Query.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Identification Query.vi"/>
+				<Item Name="TLPAX Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Initialize.vi"/>
+				<Item Name="TLPAX Get Resource Name.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Resource Name.vi"/>
+				<Item Name="TLPAX Set Wavelength.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Set Wavelength.vi"/>
+				<Item Name="TLPAX Get Wavelength Limits.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Wavelength Limits.vi"/>
+				<Item Name="TLPAX Get Power.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Power.vi"/>
+				<Item Name="TLPAX Get Degree Of Polarization.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Degree Of Polarization.vi"/>
+				<Item Name="TLPAX Get Normalized Stokes.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Normalized Stokes.vi"/>
+				<Item Name="TLPAX Get Polarization.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Polarization.vi"/>
+				<Item Name="TLPAX Close.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Close.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
@@ -162,6 +207,9 @@
 				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
+				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -175,6 +223,20 @@
 			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
 			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
+			<Item Name="LianyiInit.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiInit.vi"/>
+			<Item Name="LianyiSetRotate.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiSetRotate.vi"/>
+			<Item Name="LianyiReadRotate.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiReadRotate.vi"/>
+			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API.lvlib"/>
+			<Item Name="MT_API.dll" Type="Document" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API/MT_API.dll"/>
+			<Item Name="TLPAX_32.dll" Type="Document" URL="TLPAX_32.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="SC300Stop.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Stop.vi"/>
+			<Item Name="SC300Gomm.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Gomm.vi"/>
+			<Item Name="SC300init.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300init.vi"/>
+			<Item Name="Lianyiclose.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/Lianyiclose.vi"/>
+			<Item Name="IMC_Pkg4xxx.lvlib" Type="Library" URL="../../驱动/电机/IMCApp/inc/Labview/32/IMC_Pkg4xxx.lvlib"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
