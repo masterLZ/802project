@@ -97,7 +97,7 @@
 			<Item Name="FarFieldCamera_param.vi" Type="VI" URL="../参数/FarFieldCamera_param.vi"/>
 			<Item Name="SpecMeter_param.vi" Type="VI" URL="../参数/SpecMeter_param.vi"/>
 			<Item Name="Polarmeter_param.vi" Type="VI" URL="../参数/Polarmeter_param.vi"/>
-			<Item Name="General_param.vi" Type="VI" URL="../参数/General_param.vi"/>
+			<Item Name="general_param.vi" Type="VI" URL="../参数/general_param.vi"/>
 			<Item Name="Scope_param.vi" Type="VI" URL="../参数/Scope_param.vi"/>
 			<Item Name="ParamSetAll.vi" Type="VI" URL="../参数/ParamSetAll.vi"/>
 		</Item>
