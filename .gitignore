@@ -15,3 +15,5 @@ MOXA
 *.vascr
 *.tiff
 *.mnu
+光谱仪.lvproj
+/SpecSample.vi
