@@ -143,6 +143,8 @@
 		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
+		<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
+		<Item Name="MT Open Net.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Open Net.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -245,6 +247,7 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 				<Item Name="To .NET Object.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/To .NET Object.vi"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -260,7 +263,6 @@
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
 			<Item Name="LianyiInit.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiInit.vi"/>
 			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API.lvlib"/>
-			<Item Name="MT_API.dll" Type="Document" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API/MT_API.dll"/>
 			<Item Name="TLPAX_32.dll" Type="Document" URL="TLPAX_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -282,6 +284,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="../../../../Program Files/PI/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
+			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API/MT_API.lvlib"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
