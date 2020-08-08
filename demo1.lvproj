@@ -62,6 +62,9 @@
 					<Item Name="CaculateSpotSize .vi" Type="VI" URL="../相机/发散角计算/CaculateSpotSize .vi"/>
 					<Item Name="CaculateDivergenceAngle .vi" Type="VI" URL="../相机/发散角计算/CaculateDivergenceAngle .vi"/>
 				</Item>
+				<Item Name="FarFiledCapOneFrame.vi" Type="VI" URL="../相机/FarFiledCapOneFrame.vi"/>
+				<Item Name="FarFiledCamColse.vi" Type="VI" URL="../相机/FarFiledCamColse.vi"/>
+				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
 				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
@@ -89,6 +92,7 @@
 			<Item Name="ScopeInit.vi" Type="VI" URL="../示波器/ScopeInit.vi"/>
 			<Item Name="SpectroMeterInit.vi" Type="VI" URL="../光谱仪/SpectroMeterInit.vi"/>
 			<Item Name="CameraInit.vi" Type="VI" URL="../相机/CameraInit.vi"/>
+			<Item Name="FarFiledCamInit.vi" Type="VI" URL="../相机/FarFiledCamInit.vi"/>
 			<Item Name="PAX_init.vi" Type="VI" URL="../偏振控制器/PAX_init.vi"/>
 			<Item Name="GlobalInit.vi" Type="VI" URL="../Init/GlobalInit.vi"/>
 		</Item>
@@ -123,6 +127,7 @@
 			<Item Name="ScopeCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ScopeCheck.vi"/>
 			<Item Name="EnergyMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/EnergyMeterCheck.vi"/>
 			<Item Name="CameraConnectCheck.vi" Type="VI" URL="../相机/CameraConnectCheck.vi"/>
+			<Item Name="FarFiledCamConnectCheck.vi" Type="VI" URL="../相机/FarFiledCamConnectCheck.vi"/>
 			<Item Name="SpectroMeterConnectCheck.vi" Type="VI" URL="../光谱仪/SpectroMeterConnectCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
@@ -145,6 +150,8 @@
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
 		<Item Name="MT Open Net.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Open Net.vi"/>
+		<Item Name="Cam2.vi" Type="VI" URL="../相机/Cam2.vi"/>
+		<Item Name="NearFiledCamConnect.vi" Type="VI" URL="../相机/NearFiledCamConnect.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -248,6 +255,8 @@
 				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 				<Item Name="To .NET Object.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/To .NET Object.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
+				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -285,6 +294,18 @@
 			</Item>
 			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="../../../../Program Files/PI/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
 			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API/MT_API.lvlib"/>
+			<Item Name="TU_UninitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_UninitCamera.vi"/>
+			<Item Name="TULV_API.dll" Type="Document" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TULV_API.dll"/>
+			<Item Name="TU_InitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_InitCamera.vi"/>
+			<Item Name="TU_GetCameraInfo.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetCameraInfo.vi"/>
+			<Item Name="TU_SetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetTrigger.vi"/>
+			<Item Name="TU_GetParameterLimits.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetParameterLimits.vi"/>
+			<Item Name="TU_SetParameter.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetParameter.vi"/>
+			<Item Name="TU_WaitForFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame.vi"/>
+			<Item Name="TU_GetFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetFrame.vi"/>
+			<Item Name="TU_StartCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StartCapture.vi"/>
+			<Item Name="TU_StopCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopCapture.vi"/>
+			<Item Name="TU_OpenCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_OpenCamera.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
