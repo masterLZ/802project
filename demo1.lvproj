@@ -65,6 +65,8 @@
 				<Item Name="FarFiledCapOneFrame.vi" Type="VI" URL="../相机/FarFiledCapOneFrame.vi"/>
 				<Item Name="FarFiledCamColse.vi" Type="VI" URL="../相机/FarFiledCamColse.vi"/>
 				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
+				<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
+				<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
 				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
@@ -127,6 +129,7 @@
 			<Item Name="ScopeCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ScopeCheck.vi"/>
 			<Item Name="EnergyMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/EnergyMeterCheck.vi"/>
 			<Item Name="CameraConnectCheck.vi" Type="VI" URL="../相机/CameraConnectCheck.vi"/>
+			<Item Name="NearFiledCamConnect.vi" Type="VI" URL="../相机/NearFiledCamConnect.vi"/>
 			<Item Name="FarFiledCamConnectCheck.vi" Type="VI" URL="../相机/FarFiledCamConnectCheck.vi"/>
 			<Item Name="SpectroMeterConnectCheck.vi" Type="VI" URL="../光谱仪/SpectroMeterConnectCheck.vi"/>
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
@@ -142,6 +145,10 @@
 			<Item Name="MotorAlltoZero.vi" Type="VI" URL="../电机/MotorAlltoZero.vi"/>
 			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
 		</Item>
+		<Item Name="测试用" Type="Folder">
+			<Item Name="Demo.vi" Type="VI" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/Demo.vi"/>
+			<Item Name="LabviewSample.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/LabviewSample.vi"/>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
@@ -149,10 +156,7 @@
 		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
-		<Item Name="Cam2.vi" Type="VI" URL="../相机/Cam2.vi"/>
-		<Item Name="NearFiledCamConnect.vi" Type="VI" URL="../相机/NearFiledCamConnect.vi"/>
-		<Item Name="FarfiledCapture.vi" Type="VI" URL="../相机/FarfiledCapture.vi"/>
-		<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
+		<Item Name="nearCamClose.vi" Type="VI" URL="../相机/nearCamClose.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -258,6 +262,10 @@
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
 				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
+				<Item Name="Flatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Flatten Pixmap.vi"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -307,6 +315,19 @@
 			<Item Name="TU_StopCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopCapture.vi"/>
 			<Item Name="TU_OpenCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_OpenCamera.vi"/>
 			<Item Name="TU_StartCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StartCapture.vi"/>
+			<Item Name="TU_GetParameter.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetParameter.vi"/>
+			<Item Name="TU_GetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetTrigger.vi"/>
+			<Item Name="TU_GetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetOutPutTrigger.vi"/>
+			<Item Name="TU_SetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetOutPutTrigger.vi"/>
+			<Item Name="TU_StartRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StartRecorder.vi"/>
+			<Item Name="TU_StopRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopRecorder.vi"/>
+			<Item Name="TU_SetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetROI.vi"/>
+			<Item Name="TU_GetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetROI.vi"/>
+			<Item Name="TU_WaitForFrame_1.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame_1.vi"/>
+			<Item Name="MT Set Axis Halt.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Set Axis Halt.vi"/>
+			<Item Name="MT Set Axis Position P Target Rel.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Set Axis Position P Target Rel.vi"/>
+			<Item Name="MT Set Axis Position Stop.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Set Axis Position Stop.vi"/>
+			<Item Name="MT Switch To UART.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/20170113 联谊-控制器Labview二次开发说明和范例/Labview二次开发说明和范例/例程/MT_API/VIs/MT Switch To UART.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
