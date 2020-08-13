@@ -67,9 +67,12 @@
 				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
 				<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
 				<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
+				<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
+				<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
 				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
 				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
+				<Item Name="nearCamClose.vi" Type="VI" URL="../相机/nearCamClose.vi"/>
 				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
@@ -146,8 +149,10 @@
 			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
+			<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
 			<Item Name="Demo.vi" Type="VI" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/Demo.vi"/>
 			<Item Name="LabviewSample.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/LabviewSample.vi"/>
+			<Item Name="TestFit.vi" Type="VI" URL="../相机/TestFit.vi"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
@@ -155,11 +160,12 @@
 		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
-		<Item Name="nearCamClose.vi" Type="VI" URL="../相机/nearCamClose.vi"/>
-		<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
-		<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
-		<Item Name="TestFit.vi" Type="VI" URL="../相机/TestFit.vi"/>
+		<Item Name="ControlMotor.vi" Type="VI" URL="../电机/ControlMotor.vi"/>
+		<Item Name="ControlAxisSet.vi" Type="VI" URL="../电机/ControlAxisSet.vi"/>
+		<Item Name="ControlMotorParam.vi" Type="VI" URL="../电机/ControlMotorParam.vi"/>
+		<Item Name="ControlMotorMove.vi" Type="VI" URL="../电机/ControlMotorMove.vi"/>
+		<Item Name="ControlMotorCalculatePusle.vi" Type="VI" URL="../电机/ControlMotorCalculatePusle.vi"/>
+		<Item Name="ControlMotorDefinePostion.vi" Type="VI" URL="../电机/ControlMotorDefinePostion.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
