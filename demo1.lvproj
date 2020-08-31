@@ -147,6 +147,20 @@
 			<Item Name="RotateTest.vi" Type="VI" URL="../电机/RotateTest.vi"/>
 			<Item Name="MotorAlltoZero.vi" Type="VI" URL="../电机/MotorAlltoZero.vi"/>
 			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
+			<Item Name="ControlMotor.vi" Type="VI" URL="../电机/ControlMotor.vi"/>
+			<Item Name="ControlAxisSet.vi" Type="VI" URL="../电机/ControlAxisSet.vi"/>
+			<Item Name="ControlMotorParam.vi" Type="VI" URL="../电机/ControlMotorParam.vi"/>
+			<Item Name="ControlMotorMove.vi" Type="VI" URL="../电机/ControlMotorMove.vi"/>
+			<Item Name="ControlMotorCalculatePusle.vi" Type="VI" URL="../电机/ControlMotorCalculatePusle.vi"/>
+			<Item Name="ControlMotorDefinePostion.vi" Type="VI" URL="../电机/ControlMotorDefinePostion.vi"/>
+			<Item Name="ControlReadPulse.vi" Type="VI" URL="../电机/ControlReadPulse.vi"/>
+			<Item Name="控制电机位置枚举器.ctl" Type="VI" URL="../UI组件/控制电机位置枚举器.ctl"/>
+			<Item Name="控制电机枚举器.ctl" Type="VI" URL="../UI组件/控制电机枚举器.ctl"/>
+			<Item Name="控制电机指令枚举器.ctl" Type="VI" URL="../UI组件/控制电机指令枚举器.ctl"/>
+			<Item Name="DifineDivergenceAngleAxisPos.vi" Type="VI" URL="../UI组件/DifineDivergenceAngleAxisPos.vi"/>
+			<Item Name="ControlMotorAbsMove.vi" Type="VI" URL="../UI组件/ControlMotorAbsMove.vi"/>
+			<Item Name="ControlMotorTest.vi" Type="VI" URL="../电机/ControlMotorTest.vi"/>
+			<Item Name="ControlMotorFindZero.vi" Type="VI" URL="../电机/ControlMotorFindZero.vi"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
@@ -158,14 +172,10 @@
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
-		<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="ControlMotor.vi" Type="VI" URL="../电机/ControlMotor.vi"/>
-		<Item Name="ControlAxisSet.vi" Type="VI" URL="../电机/ControlAxisSet.vi"/>
-		<Item Name="ControlMotorParam.vi" Type="VI" URL="../电机/ControlMotorParam.vi"/>
-		<Item Name="ControlMotorMove.vi" Type="VI" URL="../电机/ControlMotorMove.vi"/>
-		<Item Name="ControlMotorCalculatePusle.vi" Type="VI" URL="../电机/ControlMotorCalculatePusle.vi"/>
-		<Item Name="ControlMotorDefinePostion.vi" Type="VI" URL="../电机/ControlMotorDefinePostion.vi"/>
+		<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
+		<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
+		<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
@@ -335,6 +345,7 @@
 			<Item Name="TU_SetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetROI.vi"/>
 			<Item Name="TU_GetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetROI.vi"/>
 			<Item Name="TU_WaitForFrame_1.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame_1.vi"/>
+			<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
