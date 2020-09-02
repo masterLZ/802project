@@ -55,6 +55,7 @@
 			<Item Name="Polarzation" Type="Folder">
 				<Item Name="PAX_Read.vi" Type="VI" URL="../偏振控制器/PAX_Read.vi"/>
 				<Item Name="PAXStop.vi" Type="VI" URL="../偏振控制器/PAXStop.vi"/>
+				<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 				<Item Name="PolarizationRead.vi" Type="VI" URL="../偏振控制器/PolarizationRead.vi"/>
 			</Item>
 			<Item Name="Camera" Type="Folder">
@@ -67,6 +68,9 @@
 				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
 				<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
 				<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
+				<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
+				<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
+				<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
 				<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
 				<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
@@ -171,14 +175,10 @@
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
-		<Item Name="PolarMeterCheck.vi" Type="VI" URL="../MessageHandle/连接检查/PolarMeterCheck.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
-		<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
-		<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
+		<Item Name="FromIPtoVISA.vi" Type="VI" URL="../示波器/FromIPtoVISA.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
-				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
 				<Item Name="TLPAX Find Resources.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Find Resources.vi"/>
 				<Item Name="TLPAX Set Basic Scan Rate.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Set Basic Scan Rate.vi"/>
@@ -194,12 +194,9 @@
 				<Item Name="TLPAX Get Normalized Stokes.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Normalized Stokes.vi"/>
 				<Item Name="TLPAX Get Polarization.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Polarization.vi"/>
 				<Item Name="TLPAX Close.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Close.vi"/>
+				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
-				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
-				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
-				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
 				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
@@ -287,6 +284,10 @@
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
+				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
+				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -300,19 +301,13 @@
 			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
 			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
-			<Item Name="LianyiInit.vi" Type="VI" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/LianyiInit.vi"/>
-			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API.lvlib"/>
+			<Item Name="LianyiInit.vi" Type="VI" URL="../../驱动/联谊/例程/LianyiInit.vi"/>
 			<Item Name="TLPAX_32.dll" Type="Document" URL="TLPAX_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="SC300Stop.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Stop.vi"/>
-			<Item Name="SC300Gomm.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Gomm.vi"/>
-			<Item Name="SC300init.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300init.vi"/>
 			<Item Name="IMC_Pkg4xxx.lvlib" Type="Library" URL="../../驱动/电机/IMCApp/inc/Labview/32/IMC_Pkg4xxx.lvlib"/>
 			<Item Name="LightField Automation.lvclass" Type="LVClass" URL="/C/ProgramData/Documents/Princeton Instruments/LightField/Add-in and Automation SDK/Samples/LabVIEW Automation/lightfield-automation-labview/LightField Automation.lvclass"/>
-			<Item Name="PrincetonInstruments.LightFieldViewV3.dll" Type="Document" URL="../../../../Program Files/PI/AddInViews/PrincetonInstruments.LightFieldViewV3.dll"/>
-			<Item Name="PrincetonInstruments.LightField.AutomationV3.dll" Type="Document" URL="../../../../Program Files/PI/PrincetonInstruments.LightField.AutomationV3.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -322,8 +317,6 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="../../../../Program Files/PI/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
-			<Item Name="MT_API.lvlib" Type="Library" URL="/C/Users/LZ/Desktop/联谊(1)/联谊/例程/MT_API/MT_API.lvlib"/>
 			<Item Name="TU_UninitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_UninitCamera.vi"/>
 			<Item Name="TULV_API.dll" Type="Document" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TULV_API.dll"/>
 			<Item Name="TU_InitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_InitCamera.vi"/>
@@ -345,7 +338,10 @@
 			<Item Name="TU_SetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetROI.vi"/>
 			<Item Name="TU_GetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetROI.vi"/>
 			<Item Name="TU_WaitForFrame_1.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame_1.vi"/>
-			<Item Name="SC300Move.vi" Type="VI" URL="../../../SC300 UserFiles/SC300 UserFiles/SC300 UserFiles/LabView/SC300Move.vi"/>
+			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
+			<Item Name="PrincetonInstruments.LightFieldViewV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/AddInViews/PrincetonInstruments.LightFieldViewV3.dll"/>
+			<Item Name="PrincetonInstruments.LightField.AutomationV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightField.AutomationV3.dll"/>
+			<Item Name="MT_API.lvlib" Type="Library" URL="../../驱动/联谊/例程/MT_API/MT_API.lvlib"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
