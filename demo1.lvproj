@@ -80,6 +80,7 @@
 				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
+				<Item Name="FromIPtoVISA.vi" Type="VI" URL="../示波器/FromIPtoVISA.vi"/>
 				<Item Name="Scope1.vi" Type="VI" URL="../示波器/Scope1.vi"/>
 			</Item>
 			<Item Name="Power/Energy" Type="Folder">
@@ -142,15 +143,11 @@
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
 		<Item Name="电机" Type="Folder">
-			<Item Name="AxisInit.vi" Type="VI" URL="../电机/AxisInit.vi"/>
-			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
 			<Item Name="MotorRotate.vi" Type="VI" URL="../电机/MotorRotate.vi"/>
 			<Item Name="MotorPosReade.vi" Type="VI" URL="../电机/MotorPosReade.vi"/>
-			<Item Name="MotorShutDown.vi" Type="VI" URL="../电机/MotorShutDown.vi"/>
 			<Item Name="MotorTest.vi" Type="VI" URL="../电机/MotorTest.vi"/>
 			<Item Name="RotateTest.vi" Type="VI" URL="../电机/RotateTest.vi"/>
 			<Item Name="MotorAlltoZero.vi" Type="VI" URL="../电机/MotorAlltoZero.vi"/>
-			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
 			<Item Name="ControlMotor.vi" Type="VI" URL="../电机/ControlMotor.vi"/>
 			<Item Name="ControlAxisSet.vi" Type="VI" URL="../电机/ControlAxisSet.vi"/>
 			<Item Name="ControlMotorParam.vi" Type="VI" URL="../电机/ControlMotorParam.vi"/>
@@ -164,9 +161,14 @@
 			<Item Name="DifineDivergenceAngleAxisPos.vi" Type="VI" URL="../UI组件/DifineDivergenceAngleAxisPos.vi"/>
 			<Item Name="ControlMotorAbsMove.vi" Type="VI" URL="../UI组件/ControlMotorAbsMove.vi"/>
 			<Item Name="ControlMotorTest.vi" Type="VI" URL="../电机/ControlMotorTest.vi"/>
+			<Item Name="AxisInit.vi" Type="VI" URL="../电机/AxisInit.vi"/>
+			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
 			<Item Name="ControlMotorFindZero.vi" Type="VI" URL="../电机/ControlMotorFindZero.vi"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
+			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
+			<Item Name="MotorShutDown.vi" Type="VI" URL="../电机/MotorShutDown.vi"/>
+			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
 			<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
 			<Item Name="Demo.vi" Type="VI" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/Demo.vi"/>
 			<Item Name="LabviewSample.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_20200805/Labview(Gige)_20200805/Labview(Gige)_x86_20200804/LabviewSample.vi"/>
@@ -176,7 +178,6 @@
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="FromIPtoVISA.vi" Type="VI" URL="../示波器/FromIPtoVISA.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
