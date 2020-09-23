@@ -71,6 +71,7 @@
 				<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
 				<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
 				<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
+				<Item Name="FarFiledDefineOffset.vi" Type="VI" URL="../相机/FarFiledDefineOffset.vi"/>
 				<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
 				<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
@@ -179,7 +180,9 @@
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="Far1test.vi" Type="VI" URL="../相机/Far1test.vi"/>
-		<Item Name="FarFiledDefineOffset.vi" Type="VI" URL="../相机/FarFiledDefineOffset.vi"/>
+		<Item Name="FarfiledImageJoint2.vi" Type="VI" URL="../相机/FarfiledImageJoint2.vi"/>
+		<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
+		<Item Name="FarfiledImageJoint3.vi" Type="VI" URL="../相机/FarfiledImageJoint3.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
