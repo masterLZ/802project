@@ -66,7 +66,6 @@
 				<Item Name="FarFiledCapOneFrame.vi" Type="VI" URL="../相机/FarFiledCapOneFrame.vi"/>
 				<Item Name="FarFiledCamColse.vi" Type="VI" URL="../相机/FarFiledCamColse.vi"/>
 				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
-				<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
 				<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
 				<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
 				<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
@@ -144,7 +143,6 @@
 			<Item Name="ConnectCheck.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheck.vi"/>
 		</Item>
 		<Item Name="电机" Type="Folder">
-			<Item Name="MotorRotate.vi" Type="VI" URL="../电机/MotorRotate.vi"/>
 			<Item Name="MotorPosReade.vi" Type="VI" URL="../电机/MotorPosReade.vi"/>
 			<Item Name="MotorTest.vi" Type="VI" URL="../电机/MotorTest.vi"/>
 			<Item Name="RotateTest.vi" Type="VI" URL="../电机/RotateTest.vi"/>
@@ -168,8 +166,11 @@
 		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
+			<Item Name="ControlMotorFindZeroEdge.vi" Type="VI" URL="../电机/ControlMotorFindZeroEdge.vi"/>
+			<Item Name="MotorRotate.vi" Type="VI" URL="../电机/MotorRotate.vi"/>
 			<Item Name="MotorShutDown.vi" Type="VI" URL="../电机/MotorShutDown.vi"/>
 			<Item Name="MotorJudgePosition.vi" Type="VI" URL="../电机/MotorJudgePosition.vi"/>
+			<Item Name="FarFiledPreCap.vi" Type="VI" URL="../相机/FarFiledPreCap.vi"/>
 			<Item Name="spectest1.vi" Type="VI" URL="../光谱仪/spectest1.vi"/>
 			<Item Name="Demo.vi" Type="VI" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/Demo.vi"/>
 			<Item Name="LabviewSample.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/LabviewSample.vi"/>
@@ -183,6 +184,7 @@
 		<Item Name="FarfiledImageJoint2.vi" Type="VI" URL="../相机/FarfiledImageJoint2.vi"/>
 		<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
 		<Item Name="FarfiledImageJoint3.vi" Type="VI" URL="../相机/FarfiledImageJoint3.vi"/>
+		<Item Name="TriggerDemo.vi" Type="VI" URL="/C/Users/Administrator/Desktop/TriggerDemo.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
