@@ -121,6 +121,10 @@ public:
 #define VsyCam_FALSE   (-1)
 #define VsyCam_TIMEOUT (-2)
 
+#define NS_UNIT 0
+#define US_UNIT 1
+#define MS_UNIT 2
+#define S_UNIT  3
 
 #define CAMERA_INFO_LEN 0x160    /* 参数区长度 */
 
@@ -182,7 +186,7 @@ public:
 #define  SYNC			0x94	//*同步方式(3-监控模式)
 
 #define  BITSEL			0x95	//8bit/12bit切换
-
+#define  FIRMWARE_VERSION 0x96  //相机固件版本号澹(含义和作用同上面命令SOFT_VERSION，为了兼容以前相机特增加此命令，替换掉上面的SOFT_VERSION，此命令参数值高两个字节作为主版本号，低两个字节作为次版本号)
 
 
 //预留n个命令位置.......
@@ -295,7 +299,7 @@ public:
 
 extern "C" int __declspec(dllexport)VsyCam_TransDataForShow(LABVIEW_IMAGE_INFO *ImgInfo,char *OriginData,char *ResultData);
 
-extern "C" int __declspec(dllexport)VsyCam_SearchCamera(char ipArray[][15]);
+extern "C" int __declspec(dllexport)VsyCam_SearchCamera(BYTE *ipArray);
 
 extern "C" int __declspec(dllexport)VsyCam_OpenConnection(char* IP,int PORT);
 
@@ -311,6 +315,7 @@ extern "C" int __declspec(dllexport)VsyCam_TIFSave(const char *pFileName,char *H
 
 extern "C" int __declspec(dllexport)VsyCam_HigSave(const char *pFileName,char *Head,char *pImgData);
 
+extern "C" int __declspec(dllexport)VsyCam_SetPara(int socketFd );
 /****** 注:T命令透传指令最多支持用户数据长度为255个字节 *******/
 /**** 参数说明:   pusrData:为透传数据；usrDataLen:透传数据长度 ************/
 /**** 返回值:  0: 成功    -1: 失败 *********/

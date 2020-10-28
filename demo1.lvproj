@@ -185,6 +185,11 @@
 		<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
 		<Item Name="FarfiledImageJoint3.vi" Type="VI" URL="../相机/FarfiledImageJoint3.vi"/>
 		<Item Name="TriggerDemo.vi" Type="VI" URL="/C/Users/Administrator/Desktop/TriggerDemo.vi"/>
+		<Item Name="ImageResample.vi" Type="VI" URL="../相机/ImageResample.vi"/>
+		<Item Name="DivergeAngleScan.vi" Type="VI" URL="../相机/DivergeAngleScan.vi"/>
+		<Item Name="GenerateDiverageGrid.vi" Type="VI" URL="../相机/GenerateDiverageGrid.vi"/>
+		<Item Name="GenerateFarfiledGrid.vi" Type="VI" URL="../相机/GenerateFarfiledGrid.vi"/>
+		<Item Name="nearCamSnapOnce.vi" Type="VI" URL="../相机/nearCamSnapOnce.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -352,6 +357,8 @@
 			<Item Name="TU_GetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetTrigger.vi"/>
 			<Item Name="TU_StopCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopCapture.vi"/>
 			<Item Name="FarFiledCorrectArea.vi" Type="VI" URL="../相机/FarFiledCorrectArea.vi"/>
+			<Item Name="computeTheta.vi" Type="VI" URL="../相机/computeTheta.vi"/>
+			<Item Name="VsyCam.dll" Type="Document" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/VsyCam.dll"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
