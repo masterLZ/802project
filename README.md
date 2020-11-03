@@ -10,13 +10,20 @@
 
 远场相机IP 192.168.1.85
 
-MOXA1 IP 192.168.129.20; 端口4001 波特率115200 连接功率能量计表头
+MOXA Port1 TCPSever Mode; IP 192.168.129.20; 端口4001 波特率115200 连接功率能量计表头
+
+MOXA Port2 RealCOM Mode;  COM6; 115200,N,8,1
 
 示波器VISA TCPIP0::192.168.129.30::inst0::INSTR
 
 VIS偏振仪序列号 M00572046
 
 IR偏振仪序列号  M00572424
+# MOXA 实时串口设置
+1. 在网页设置中将制定Port工作模式更改为Real COM Mode。
+2. 下载安装moxa-windows-driver-manager
+3. 在manager软件中首先扫描设备，扫描完成后设置串口参数。
+
 # 注意事项
 港宇相机需要讲图采集之后帧数开始跳了才能进行设置。否则容易失败
 

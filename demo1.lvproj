@@ -164,6 +164,10 @@
 			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
 			<Item Name="ControlMotorFindZero.vi" Type="VI" URL="../电机/ControlMotorFindZero.vi"/>
 		</Item>
+		<Item Name="衰减片" Type="Folder">
+			<Item Name="Attenuator_Communication.vi" Type="VI" URL="../电机/衰减片/Attenuator_Communication.vi"/>
+			<Item Name="MT_API.lvlib" Type="Library" URL="../../驱动/电控衰减/MT_API/MT_API.lvlib"/>
+		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
 			<Item Name="ControlMotorFindZeroEdge.vi" Type="VI" URL="../电机/ControlMotorFindZeroEdge.vi"/>
@@ -315,7 +319,6 @@
 			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
 			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
-			<Item Name="LianyiInit.vi" Type="VI" URL="../../驱动/联谊/例程/LianyiInit.vi"/>
 			<Item Name="TLPAX_32.dll" Type="Document" URL="TLPAX_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -336,7 +339,6 @@
 			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
 			<Item Name="PrincetonInstruments.LightFieldViewV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/AddInViews/PrincetonInstruments.LightFieldViewV3.dll"/>
 			<Item Name="PrincetonInstruments.LightField.AutomationV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightField.AutomationV3.dll"/>
-			<Item Name="MT_API.lvlib" Type="Library" URL="../../驱动/联谊/例程/MT_API/MT_API.lvlib"/>
 			<Item Name="TU_WaitForFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame.vi"/>
 			<Item Name="TULV_API.dll" Type="Document" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TULV_API.dll"/>
 			<Item Name="TU_GetFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetFrame.vi"/>
@@ -359,6 +361,7 @@
 			<Item Name="FarFiledCorrectArea.vi" Type="VI" URL="../相机/FarFiledCorrectArea.vi"/>
 			<Item Name="computeTheta.vi" Type="VI" URL="../相机/computeTheta.vi"/>
 			<Item Name="VsyCam.dll" Type="Document" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/VsyCam.dll"/>
+			<Item Name="Attenuator.lvlib" Type="Library" URL="../../驱动/电控衰减/API/Attenuator.lvlib"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
