@@ -165,8 +165,15 @@
 			<Item Name="ControlMotorFindZero.vi" Type="VI" URL="../电机/ControlMotorFindZero.vi"/>
 		</Item>
 		<Item Name="衰减片" Type="Folder">
+			<Item Name="衰减片电机枚举.ctl" Type="VI" URL="../电机/衰减片/衰减片电机枚举.ctl"/>
+			<Item Name="衰减片电机位置枚举器.ctl" Type="VI" URL="../电机/衰减片/衰减片电机位置枚举器.ctl"/>
+			<Item Name="衰减片电机指令枚举器.ctl" Type="VI" URL="../电机/衰减片/衰减片电机指令枚举器.ctl"/>
 			<Item Name="Attenuator_Communication.vi" Type="VI" URL="../电机/衰减片/Attenuator_Communication.vi"/>
-			<Item Name="MT_API.lvlib" Type="Library" URL="../../驱动/电控衰减/MT_API/MT_API.lvlib"/>
+			<Item Name="Attenuator_AbsMove.vi" Type="VI" URL="../电机/衰减片/Attenuator_AbsMove.vi"/>
+			<Item Name="Attenuator_AxisInit.vi" Type="VI" URL="../电机/衰减片/Attenuator_AxisInit.vi"/>
+			<Item Name="Attenuator_Close.vi" Type="VI" URL="../电机/衰减片/Attenuator_Close.vi"/>
+			<Item Name="Attenuator_CalculatePusle.vi" Type="VI" URL="../电机/衰减片/Attenuator_CalculatePusle.vi"/>
+			<Item Name="Attenuator_FindZero.vi" Type="VI" URL="../电机/衰减片/Attenuator_FindZero.vi"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
@@ -179,6 +186,7 @@
 			<Item Name="Demo.vi" Type="VI" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/Demo.vi"/>
 			<Item Name="LabviewSample.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/LabviewSample.vi"/>
 			<Item Name="TestFit.vi" Type="VI" URL="../相机/TestFit.vi"/>
+			<Item Name="Attenuator_Test.vi" Type="VI" URL="../电机/衰减片/Attenuator_Test.vi"/>
 		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
@@ -188,12 +196,13 @@
 		<Item Name="FarfiledImageJoint2.vi" Type="VI" URL="../相机/FarfiledImageJoint2.vi"/>
 		<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
 		<Item Name="FarfiledImageJoint3.vi" Type="VI" URL="../相机/FarfiledImageJoint3.vi"/>
-		<Item Name="TriggerDemo.vi" Type="VI" URL="/C/Users/Administrator/Desktop/TriggerDemo.vi"/>
 		<Item Name="ImageResample.vi" Type="VI" URL="../相机/ImageResample.vi"/>
 		<Item Name="DivergeAngleScan.vi" Type="VI" URL="../相机/DivergeAngleScan.vi"/>
 		<Item Name="GenerateDiverageGrid.vi" Type="VI" URL="../相机/GenerateDiverageGrid.vi"/>
 		<Item Name="GenerateFarfiledGrid.vi" Type="VI" URL="../相机/GenerateFarfiledGrid.vi"/>
 		<Item Name="nearCamSnapOnce.vi" Type="VI" URL="../相机/nearCamSnapOnce.vi"/>
+		<Item Name="Attenuator_Control.vi" Type="VI" URL="../电机/衰减片/Attenuator_Control.vi"/>
+		<Item Name="Attenuator_DefinePostion.vi" Type="VI" URL="../电机/衰减片/Attenuator_DefinePostion.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>

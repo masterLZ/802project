@@ -19,6 +19,24 @@ MOXA Port2 RealCOM Mode;  COM6; 115200,N,8,1
 VIS偏振仪序列号 M00572046
 
 IR偏振仪序列号  M00572424
+
+控制电机参数：
+
+                衰减片 360° 6400 puls
+
+                   X轴 1mm   800  puls
+
+	           Y轴 1mm  1000  puls
+
+	           Z轴 1mm  1000  puls
+
+              发散角轴 1mm  1000  puls
+
+                俯仰轴 360°81920 puls
+
+                旋转轴 360°81920 puls
+
+
 # MOXA 实时串口设置
 1. 在网页设置中将制定Port工作模式更改为Real COM Mode。
 2. 下载安装moxa-windows-driver-manager
