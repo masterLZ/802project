@@ -130,6 +130,7 @@
 			<Item Name="loadSubVI.vi" Type="VI" URL="../UI组件/loadSubVI.vi"/>
 			<Item Name="WaitUIShutDown.vi" Type="VI" URL="../WaitUIShutDown.vi"/>
 			<Item Name="Wait10sThenAbort.vi" Type="VI" URL="../UI组件/Wait10sThenAbort.vi"/>
+			<Item Name="DataLimit.vi" Type="VI" URL="../UI组件/DataLimit.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
 			<Item Name="ConnectCheckReport.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheckReport.vi"/>
@@ -203,6 +204,16 @@
 		<Item Name="nearCamSnapOnce.vi" Type="VI" URL="../相机/nearCamSnapOnce.vi"/>
 		<Item Name="Attenuator_Control.vi" Type="VI" URL="../电机/衰减片/Attenuator_Control.vi"/>
 		<Item Name="Attenuator_DefinePostion.vi" Type="VI" URL="../电机/衰减片/Attenuator_DefinePostion.vi"/>
+		<Item Name="ControlMotorSetIo.vi" Type="VI" URL="../电机/ControlMotorSetIo.vi"/>
+		<Item Name="NearFiledCamSetTrigger.vi" Type="VI" URL="../相机/NearFiledCamSetTrigger.vi"/>
+		<Item Name="ServoToZero.vi" Type="VI" URL="../电机/ServoToZero.vi"/>
+		<Item Name="ControlMotorFindZeroAll.vi" Type="VI" URL="../电机/ControlMotorFindZeroAll.vi"/>
+		<Item Name="ContrlJudgeStopMove.vi" Type="VI" URL="../电机/ContrlJudgeStopMove.vi"/>
+		<Item Name="NearFiledCamFind.vi" Type="VI" URL="../相机/NearFiledCamFind.vi"/>
+		<Item Name="ControlMotorDefinePostionParam.vi" Type="VI" URL="../电机/ControlMotorDefinePostionParam.vi"/>
+		<Item Name="IMAQdx_FindCamAttributes.vi" Type="VI" URL="../相机/IMAQdx_FindCamAttributes.vi"/>
+		<Item Name="nearCamSetExpoureTime.vi" Type="VI" URL="../相机/nearCamSetExpoureTime.vi"/>
+		<Item Name="nearCamSetTriggerSource.vi" Type="VI" URL="../相机/nearCamSetTriggerSource.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -315,6 +326,8 @@
 				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
 				<Item Name="IMAQ ImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ImageToArray"/>
+				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
+				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -371,6 +384,9 @@
 			<Item Name="computeTheta.vi" Type="VI" URL="../相机/computeTheta.vi"/>
 			<Item Name="VsyCam.dll" Type="Document" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/VsyCam.dll"/>
 			<Item Name="Attenuator.lvlib" Type="Library" URL="../../驱动/电控衰减/API/Attenuator.lvlib"/>
+			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
