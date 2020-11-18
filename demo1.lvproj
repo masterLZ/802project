@@ -214,6 +214,11 @@
 		<Item Name="IMAQdx_FindCamAttributes.vi" Type="VI" URL="../相机/IMAQdx_FindCamAttributes.vi"/>
 		<Item Name="nearCamSetExpoureTime.vi" Type="VI" URL="../相机/nearCamSetExpoureTime.vi"/>
 		<Item Name="nearCamSetTriggerSource.vi" Type="VI" URL="../相机/nearCamSetTriggerSource.vi"/>
+		<Item Name="nearCamReConnect.vi" Type="VI" URL="../相机/nearCamReConnect.vi"/>
+		<Item Name="nearCamSetSoftwareTrigger.vi" Type="VI" URL="../相机/nearCamSetSoftwareTrigger.vi"/>
+		<Item Name="CaculateChord.vi" Type="VI" URL="../相机/发散角计算/CaculateChord.vi"/>
+		<Item Name="ChordToAngle.vi" Type="VI" URL="../相机/发散角计算/ChordToAngle.vi"/>
+		<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -275,7 +280,6 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
@@ -328,6 +332,7 @@
 				<Item Name="IMAQ ImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ImageToArray"/>
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -387,6 +392,7 @@
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="ComputeAreaUsingMoment.vi" Type="VI" URL="../相机/发散角计算/ComputeAreaUsingMoment.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
