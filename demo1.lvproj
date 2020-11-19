@@ -219,6 +219,9 @@
 		<Item Name="CaculateChord.vi" Type="VI" URL="../相机/发散角计算/CaculateChord.vi"/>
 		<Item Name="ChordToAngle.vi" Type="VI" URL="../相机/发散角计算/ChordToAngle.vi"/>
 		<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
+		<Item Name="CollimationLightScan.vi" Type="VI" URL="../相机/CollimationLightScan.vi"/>
+		<Item Name="GenerateCollimationLightScanGrid.vi" Type="VI" URL="../相机/GenerateCollimationLightScanGrid.vi"/>
+		<Item Name="CollimationLightScanOffset.vi" Type="VI" URL="../相机/CollimationLightScanOffset.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -333,6 +336,7 @@
 				<Item Name="NI_Vision_Acquisition_Software.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/driver/NI_Vision_Acquisition_Software.lvlib"/>
 				<Item Name="IMAQdx.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/IMAQdx.ctl"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
+				<Item Name="IMAQ Copy" Type="VI" URL="/&lt;vilib&gt;/vision/Management.llb/IMAQ Copy"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
