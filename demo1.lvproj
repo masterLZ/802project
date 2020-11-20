@@ -59,25 +59,44 @@
 				<Item Name="PolarizationRead.vi" Type="VI" URL="../偏振控制器/PolarizationRead.vi"/>
 			</Item>
 			<Item Name="Camera" Type="Folder">
+				<Item Name="FarFiledMesure" Type="Folder">
+					<Item Name="FarfiledImageJoint2.vi" Type="VI" URL="../相机/FarfiledImageJoint2.vi"/>
+					<Item Name="GenerateFarfiledGrid.vi" Type="VI" URL="../相机/GenerateFarfiledGrid.vi"/>
+					<Item Name="Far1test.vi" Type="VI" URL="../相机/Far1test.vi"/>
+				</Item>
 				<Item Name="DivergenceAngle" Type="Folder">
 					<Item Name="CaculateSpotSize .vi" Type="VI" URL="../相机/发散角计算/CaculateSpotSize .vi"/>
 					<Item Name="CaculateDivergenceAngle .vi" Type="VI" URL="../相机/发散角计算/CaculateDivergenceAngle .vi"/>
+					<Item Name="GenerateDiverageGrid.vi" Type="VI" URL="../相机/GenerateDiverageGrid.vi"/>
+					<Item Name="NearFiledCamSetTrigger.vi" Type="VI" URL="../相机/NearFiledCamSetTrigger.vi"/>
+					<Item Name="CaculateChord.vi" Type="VI" URL="../相机/发散角计算/CaculateChord.vi"/>
+					<Item Name="CollimationLightScan.vi" Type="VI" URL="../相机/CollimationLightScan.vi"/>
+					<Item Name="GenerateCollimationLightScanGrid.vi" Type="VI" URL="../相机/GenerateCollimationLightScanGrid.vi"/>
+					<Item Name="CollimationLightScanOffset.vi" Type="VI" URL="../相机/CollimationLightScanOffset.vi"/>
+					<Item Name="ChordToAngle.vi" Type="VI" URL="../相机/发散角计算/ChordToAngle.vi"/>
+					<Item Name="DivergeAngleScan.vi" Type="VI" URL="../相机/DivergeAngleScan.vi"/>
+					<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
+					<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
 				</Item>
-				<Item Name="FarFiledCapOneFrame.vi" Type="VI" URL="../相机/FarFiledCapOneFrame.vi"/>
-				<Item Name="FarFiledCamColse.vi" Type="VI" URL="../相机/FarFiledCamColse.vi"/>
-				<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
-				<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
-				<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
-				<Item Name="FarfiledImageJoint.vi" Type="VI" URL="../电机/FarfiledImageJoint.vi"/>
-				<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
-				<Item Name="FarFiledDefineOffset.vi" Type="VI" URL="../相机/FarFiledDefineOffset.vi"/>
-				<Item Name="Hyperbolamodel.vi" Type="VI" URL="../相机/Hyperbolamodel.vi"/>
-				<Item Name="fitHyperbolamodel.vi" Type="VI" URL="../相机/fitHyperbolamodel.vi"/>
+				<Item Name="远场控制" Type="Folder">
+					<Item Name="FarFiledCapOneFrame.vi" Type="VI" URL="../相机/FarFiledCapOneFrame.vi"/>
+					<Item Name="FarFiledCamColse.vi" Type="VI" URL="../相机/FarFiledCamColse.vi"/>
+					<Item Name="FarFiledCamTest.vi" Type="VI" URL="../相机/FarFiledCamTest.vi"/>
+					<Item Name="FarFiledCamSetExposure.vi" Type="VI" URL="../相机/FarFiledCamSetExposure.vi"/>
+					<Item Name="FarfieldGeneratePosgrid.vi" Type="VI" URL="../电机/FarfieldGeneratePosgrid.vi"/>
+					<Item Name="FarfiledDefineReferencePose.vi" Type="VI" URL="../电机/FarfiledDefineReferencePose.vi"/>
+					<Item Name="FarFiledDefineOffset.vi" Type="VI" URL="../相机/FarFiledDefineOffset.vi"/>
+				</Item>
+				<Item Name="近场控制" Type="Folder">
+					<Item Name="nearCamSetExpoureTime.vi" Type="VI" URL="../相机/nearCamSetExpoureTime.vi"/>
+					<Item Name="nearCamSetTriggerSource.vi" Type="VI" URL="../相机/nearCamSetTriggerSource.vi"/>
+					<Item Name="nearCamReConnect.vi" Type="VI" URL="../相机/nearCamReConnect.vi"/>
+					<Item Name="nearCamSetSoftwareTrigger.vi" Type="VI" URL="../相机/nearCamSetSoftwareTrigger.vi"/>
+					<Item Name="IMAQdx_FindCamAttributes.vi" Type="VI" URL="../相机/IMAQdx_FindCamAttributes.vi"/>
+					<Item Name="nearFiledCamFind1.vi" Type="VI" URL="../相机/nearFiledCamFind1.vi"/>
+				</Item>
+				<Item Name="ImageResample.vi" Type="VI" URL="../相机/ImageResample.vi"/>
 				<Item Name="Cam1.vi" Type="VI" URL="../相机/Cam1.vi"/>
-				<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
-				<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
-				<Item Name="nearCamClose.vi" Type="VI" URL="../相机/nearCamClose.vi"/>
-				<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			</Item>
 			<Item Name="Scope" Type="Folder">
 				<Item Name="FromIPtoVISA.vi" Type="VI" URL="../示波器/FromIPtoVISA.vi"/>
@@ -86,6 +105,7 @@
 			<Item Name="Power/Energy" Type="Folder">
 				<Item Name="EnergyMeter Read.vi" Type="VI" URL="../功率能量计/EnergyMeter Read.vi"/>
 				<Item Name="ResetEnergyMeterRange.vi" Type="VI" URL="../功率能量计/ResetEnergyMeterRange.vi"/>
+				<Item Name="JudgePowerEnergy.vi" Type="VI" URL="../功率能量计/JudgePowerEnergy.vi"/>
 				<Item Name="PowerMeter Read.vi" Type="VI" URL="../功率能量计/PowerMeter Read.vi"/>
 			</Item>
 			<Item Name="SpectroMeter" Type="Folder">
@@ -131,6 +151,7 @@
 			<Item Name="WaitUIShutDown.vi" Type="VI" URL="../WaitUIShutDown.vi"/>
 			<Item Name="Wait10sThenAbort.vi" Type="VI" URL="../UI组件/Wait10sThenAbort.vi"/>
 			<Item Name="DataLimit.vi" Type="VI" URL="../UI组件/DataLimit.vi"/>
+			<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
 			<Item Name="ConnectCheckReport.vi" Type="VI" URL="../MessageHandle/连接检查/ConnectCheckReport.vi"/>
@@ -164,6 +185,12 @@
 			<Item Name="AxisInit.vi" Type="VI" URL="../电机/AxisInit.vi"/>
 			<Item Name="MotorInit.vi" Type="VI" URL="../电机/MotorInit.vi"/>
 			<Item Name="ControlMotorFindZero.vi" Type="VI" URL="../电机/ControlMotorFindZero.vi"/>
+			<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
+			<Item Name="ControlMotorSetIo.vi" Type="VI" URL="../电机/ControlMotorSetIo.vi"/>
+			<Item Name="ServoToZero.vi" Type="VI" URL="../电机/ServoToZero.vi"/>
+			<Item Name="ControlMotorFindZeroAll.vi" Type="VI" URL="../电机/ControlMotorFindZeroAll.vi"/>
+			<Item Name="ContrlJudgeStopMove.vi" Type="VI" URL="../电机/ContrlJudgeStopMove.vi"/>
+			<Item Name="ControlMotorDefinePostionParam.vi" Type="VI" URL="../电机/ControlMotorDefinePostionParam.vi"/>
 		</Item>
 		<Item Name="衰减片" Type="Folder">
 			<Item Name="衰减片电机枚举.ctl" Type="VI" URL="../电机/衰减片/衰减片电机枚举.ctl"/>
@@ -175,6 +202,8 @@
 			<Item Name="Attenuator_Close.vi" Type="VI" URL="../电机/衰减片/Attenuator_Close.vi"/>
 			<Item Name="Attenuator_CalculatePusle.vi" Type="VI" URL="../电机/衰减片/Attenuator_CalculatePusle.vi"/>
 			<Item Name="Attenuator_FindZero.vi" Type="VI" URL="../电机/衰减片/Attenuator_FindZero.vi"/>
+			<Item Name="Attenuator_DefinePostion.vi" Type="VI" URL="../电机/衰减片/Attenuator_DefinePostion.vi"/>
+			<Item Name="Attenuator_Control.vi" Type="VI" URL="../电机/衰减片/Attenuator_Control.vi"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
@@ -193,35 +222,6 @@
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="Far1test.vi" Type="VI" URL="../相机/Far1test.vi"/>
-		<Item Name="FarfiledImageJoint2.vi" Type="VI" URL="../相机/FarfiledImageJoint2.vi"/>
-		<Item Name="MotorRotateInJoint.vi" Type="VI" URL="../电机/MotorRotateInJoint.vi"/>
-		<Item Name="FarfiledImageJoint3.vi" Type="VI" URL="../相机/FarfiledImageJoint3.vi"/>
-		<Item Name="ImageResample.vi" Type="VI" URL="../相机/ImageResample.vi"/>
-		<Item Name="DivergeAngleScan.vi" Type="VI" URL="../相机/DivergeAngleScan.vi"/>
-		<Item Name="GenerateDiverageGrid.vi" Type="VI" URL="../相机/GenerateDiverageGrid.vi"/>
-		<Item Name="GenerateFarfiledGrid.vi" Type="VI" URL="../相机/GenerateFarfiledGrid.vi"/>
-		<Item Name="nearCamSnapOnce.vi" Type="VI" URL="../相机/nearCamSnapOnce.vi"/>
-		<Item Name="Attenuator_Control.vi" Type="VI" URL="../电机/衰减片/Attenuator_Control.vi"/>
-		<Item Name="Attenuator_DefinePostion.vi" Type="VI" URL="../电机/衰减片/Attenuator_DefinePostion.vi"/>
-		<Item Name="ControlMotorSetIo.vi" Type="VI" URL="../电机/ControlMotorSetIo.vi"/>
-		<Item Name="NearFiledCamSetTrigger.vi" Type="VI" URL="../相机/NearFiledCamSetTrigger.vi"/>
-		<Item Name="ServoToZero.vi" Type="VI" URL="../电机/ServoToZero.vi"/>
-		<Item Name="ControlMotorFindZeroAll.vi" Type="VI" URL="../电机/ControlMotorFindZeroAll.vi"/>
-		<Item Name="ContrlJudgeStopMove.vi" Type="VI" URL="../电机/ContrlJudgeStopMove.vi"/>
-		<Item Name="NearFiledCamFind.vi" Type="VI" URL="../相机/NearFiledCamFind.vi"/>
-		<Item Name="ControlMotorDefinePostionParam.vi" Type="VI" URL="../电机/ControlMotorDefinePostionParam.vi"/>
-		<Item Name="IMAQdx_FindCamAttributes.vi" Type="VI" URL="../相机/IMAQdx_FindCamAttributes.vi"/>
-		<Item Name="nearCamSetExpoureTime.vi" Type="VI" URL="../相机/nearCamSetExpoureTime.vi"/>
-		<Item Name="nearCamSetTriggerSource.vi" Type="VI" URL="../相机/nearCamSetTriggerSource.vi"/>
-		<Item Name="nearCamReConnect.vi" Type="VI" URL="../相机/nearCamReConnect.vi"/>
-		<Item Name="nearCamSetSoftwareTrigger.vi" Type="VI" URL="../相机/nearCamSetSoftwareTrigger.vi"/>
-		<Item Name="CaculateChord.vi" Type="VI" URL="../相机/发散角计算/CaculateChord.vi"/>
-		<Item Name="ChordToAngle.vi" Type="VI" URL="../相机/发散角计算/ChordToAngle.vi"/>
-		<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
-		<Item Name="CollimationLightScan.vi" Type="VI" URL="../相机/CollimationLightScan.vi"/>
-		<Item Name="GenerateCollimationLightScanGrid.vi" Type="VI" URL="../相机/GenerateCollimationLightScanGrid.vi"/>
-		<Item Name="CollimationLightScanOffset.vi" Type="VI" URL="../相机/CollimationLightScanOffset.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -346,7 +346,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Toggle Symbol.vi" Type="VI" URL="../UI组件/Selectable ListBox xControl/SubVIs/Toggle Symbol.vi"/>
-			<Item Name="VsyCam.dll" Type="Document" URL="../相机/VsyCam.dll"/>
 			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
 			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
@@ -397,6 +396,9 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="ComputeAreaUsingMoment.vi" Type="VI" URL="../相机/发散角计算/ComputeAreaUsingMoment.vi"/>
+			<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
+			<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
+			<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
