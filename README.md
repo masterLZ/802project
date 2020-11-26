@@ -22,19 +22,19 @@ IR偏振仪序列号  M00572424
 
 控制电机参数：
 
-                衰减片 360° 6400 puls
+                衰减片   360° 6400    puls
 
-                   X轴 1mm   800  puls
+                X轴     1mm  1715.61 puls(800/tan(25°))
 
-	           Y轴 1mm  1000  puls
+	        Y轴     1mm  1000    puls
 
-	           Z轴 1mm  1000  puls
+	        Z轴     1mm  1000    puls
 
-              发散角轴 1mm  1000  puls
+                发散角轴 1mm  1000    puls
 
-                俯仰轴 360°81920 puls
+                俯仰轴   360° 81920   puls
 
-                旋转轴 360°81920 puls
+                旋转轴   360° 81920   puls
 
 
 # MOXA 实时串口设置
