@@ -109,6 +109,7 @@
 				<Item Name="EnergyMeter Read.vi" Type="VI" URL="../功率能量计/EnergyMeter Read.vi"/>
 				<Item Name="ResetEnergyMeterRange.vi" Type="VI" URL="../功率能量计/ResetEnergyMeterRange.vi"/>
 				<Item Name="JudgePowerEnergy.vi" Type="VI" URL="../功率能量计/JudgePowerEnergy.vi"/>
+				<Item Name="TCPIP_CRLF_Quary.vi" Type="VI" URL="../功率能量计/TCPIP_CRLF_Quary.vi"/>
 				<Item Name="PowerMeter Read.vi" Type="VI" URL="../功率能量计/PowerMeter Read.vi"/>
 			</Item>
 			<Item Name="SpectroMeter" Type="Folder">
@@ -156,6 +157,7 @@
 			<Item Name="DataLimit.vi" Type="VI" URL="../UI组件/DataLimit.vi"/>
 			<Item Name="WaitMeasure.vi" Type="VI" URL="../UI组件/WaitMeasure.vi"/>
 			<Item Name="GetCurrentMissionString.vi" Type="VI" URL="../UI组件/GetCurrentMissionString.vi"/>
+			<Item Name="GetSystemPath.vi" Type="VI" URL="../UI组件/GetSystemPath.vi"/>
 			<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
@@ -227,8 +229,8 @@
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
-		<Item Name="GetSystemPath.vi" Type="VI" URL="../UI组件/GetSystemPath.vi"/>
-		<Item Name="TCPIP_CRLF_Quary.vi" Type="VI" URL="../功率能量计/TCPIP_CRLF_Quary.vi"/>
+		<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
+		<Item Name="衰减片前面板.ctl" Type="VI" URL="../UI组件/衰减片前面板.ctl"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -246,18 +248,8 @@
 				<Item Name="TLPAX Get Normalized Stokes.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Normalized Stokes.vi"/>
 				<Item Name="TLPAX Get Polarization.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Polarization.vi"/>
 				<Item Name="TLPAX Close.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Close.vi"/>
-				<Item Name="Read (Single Waveform).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Read (Single Waveform).vi"/>
-				<Item Name="Error Query.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Utility/Error Query.vi"/>
-				<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
-				<Item Name="Wait for Operation Complete.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Data_Low Level/Wait for Operation Complete.vi"/>
-				<Item Name="Tektronix Model Check.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Private/Tektronix Model Check.vi"/>
-				<Item Name="Read (Multiple Waveforms).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Read (Multiple Waveforms).vi"/>
-				<Item Name="Read (Multiple Digital Waveforms).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Read (Multiple Digital Waveforms).vi"/>
-				<Item Name="Read (Single Digital Waveform).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Read (Single Digital Waveform).vi"/>
-				<Item Name="Initiate.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Data_Low Level/Initiate.vi"/>
-				<Item Name="Fetch Waveform.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Data_Low Level/Fetch Waveform.vi"/>
-				<Item Name="Fetch Waveform (Digital Waveform).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Data_Low Level/Fetch Waveform (Digital Waveform).vi"/>
-				<Item Name="Fetch Waveform (Waveform Data Type).vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Data/Data_Low Level/Fetch Waveform (Waveform Data Type).vi"/>
+				<Item Name="Configure Continuous Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Configure/Configure Continuous Acquisition.vi"/>
+				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Initialize.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -354,10 +346,6 @@
 				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
-				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
-				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
-				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
-				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 				<Item Name="NI_report.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_report.lvclass"/>
 				<Item Name="NI_ReportGenerationCore.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/NIReport.llb/NI_ReportGenerationCore.lvlib"/>
 				<Item Name="NI_HTML.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Utility/NIReport.llb/HTML/NI_HTML.lvclass"/>
@@ -406,6 +394,10 @@
 				<Item Name="Flip and Pad for Picture Control.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Flip and Pad for Picture Control.vi"/>
 				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
 				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
+				<Item Name="Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDT.llb/Compress Digital.vi"/>
+				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
+				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
+				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -415,8 +407,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Toggle Symbol.vi" Type="VI" URL="../UI组件/Selectable ListBox xControl/SubVIs/Toggle Symbol.vi"/>
-			<Item Name="DPOreadRaise.vi" Type="VI" URL="../示波器/DPOreadRaise.vi"/>
-			<Item Name="DPOreadMeasurement.vi" Type="VI" URL="../示波器/DPOreadMeasurement.vi"/>
+			<Item Name="DPOreadPWidth.vi" Type="VI" URL="../示波器/DPOreadPWidth.vi"/>
 			<Item Name="DPOreadFrequency.vi" Type="VI" URL="../示波器/DPOreadFrequency.vi"/>
 			<Item Name="TLPAX_32.dll" Type="Document" URL="TLPAX_32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -469,7 +460,6 @@
 			<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			<Item Name="findCOM.vi" Type="VI" URL="../电机/findCOM.vi"/>
 			<Item Name="Atten.lvlib" Type="Library" URL="../../驱动/电控衰减/API1/Atten.lvlib"/>
-			<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="../../驱动/Tektronix DPO MSO 2000 4000 Series1/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
