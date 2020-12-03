@@ -198,6 +198,8 @@
 			<Item Name="ControlMotorFindZeroAll.vi" Type="VI" URL="../电机/ControlMotorFindZeroAll.vi"/>
 			<Item Name="ContrlJudgeStopMove.vi" Type="VI" URL="../电机/ContrlJudgeStopMove.vi"/>
 			<Item Name="ControlMotorDefinePostionParam.vi" Type="VI" URL="../电机/ControlMotorDefinePostionParam.vi"/>
+			<Item Name="MotorMoveRelative.vi" Type="VI" URL="../电机/MotorMoveRelative.vi"/>
+			<Item Name="ControlReadPulseAll.vi" Type="VI" URL="../电机/ControlReadPulseAll.vi"/>
 		</Item>
 		<Item Name="衰减片" Type="Folder">
 			<Item Name="衰减片电机枚举.ctl" Type="VI" URL="../电机/衰减片/衰减片电机枚举.ctl"/>
@@ -211,6 +213,8 @@
 			<Item Name="Attenuator_FindZero.vi" Type="VI" URL="../电机/衰减片/Attenuator_FindZero.vi"/>
 			<Item Name="Attenuator_DefinePostion.vi" Type="VI" URL="../电机/衰减片/Attenuator_DefinePostion.vi"/>
 			<Item Name="Attenuator_Control.vi" Type="VI" URL="../电机/衰减片/Attenuator_Control.vi"/>
+			<Item Name="Attenuator_ReadPos.vi" Type="VI" URL="../电机/衰减片/Attenuator_ReadPos.vi"/>
+			<Item Name="衰减片前面板.ctl" Type="VI" URL="../UI组件/衰减片前面板.ctl"/>
 		</Item>
 		<Item Name="测试用" Type="Folder">
 			<Item Name="ControlMotorTest_Connect.vi" Type="VI" URL="../电机/ControlMotorTest_Connect.vi"/>
@@ -225,12 +229,18 @@
 			<Item Name="TestFit.vi" Type="VI" URL="../相机/TestFit.vi"/>
 			<Item Name="Attenuator_Test.vi" Type="VI" URL="../电机/衰减片/Attenuator_Test.vi"/>
 		</Item>
+		<Item Name="Alligent" Type="Folder">
+			<Item Name="保存初始位置.vi" Type="VI" URL="../InOut/保存初始位置.vi"/>
+			<Item Name="Alligent_DrawOverLay.vi" Type="VI" URL="../Alligent_DrawOverLay.vi"/>
+			<Item Name="nearCamGetExpoureTime.vi" Type="VI" URL="../相机/nearCamGetExpoureTime.vi"/>
+			<Item Name="Alligent.vi" Type="VI" URL="../Alligent.vi"/>
+		</Item>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 		<Item Name="图标.ico" Type="Document" URL="../图标.ico"/>
 		<Item Name="StartMeasure.vi" Type="VI" URL="../StartMeasure.vi"/>
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
-		<Item Name="衰减片前面板.ctl" Type="VI" URL="../UI组件/衰减片前面板.ctl"/>
+		<Item Name="读取初始位置.vi" Type="VI" URL="../InOut/读取初始位置.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -248,8 +258,6 @@
 				<Item Name="TLPAX Get Normalized Stokes.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Normalized Stokes.vi"/>
 				<Item Name="TLPAX Get Polarization.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Get Polarization.vi"/>
 				<Item Name="TLPAX Close.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX Close.vi"/>
-				<Item Name="Configure Continuous Acquisition.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Configure/Configure Continuous Acquisition.vi"/>
-				<Item Name="Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Public/Initialize.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -398,6 +406,11 @@
 				<Item Name="DTbl Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Compress Digital.vi"/>
 				<Item Name="DTbl Digital Size.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DTblOps.llb/DTbl Digital Size.vi"/>
 				<Item Name="DWDT Compress Digital.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Compress Digital.vi"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="IMAQ Overlay Line" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Line"/>
+				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -456,7 +469,6 @@
 			</Item>
 			<Item Name="ComputeAreaUsingMoment.vi" Type="VI" URL="../相机/发散角计算/ComputeAreaUsingMoment.vi"/>
 			<Item Name="nearCamSnap.vi" Type="VI" URL="../相机/nearCamSnap.vi"/>
-			<Item Name="HeatBeat.vi" Type="VI" URL="../相机/HeatBeat.vi"/>
 			<Item Name="cover8-12.vi" Type="VI" URL="../相机/cover8-12.vi"/>
 			<Item Name="findCOM.vi" Type="VI" URL="../电机/findCOM.vi"/>
 			<Item Name="Atten.lvlib" Type="Library" URL="../../驱动/电控衰减/API1/Atten.lvlib"/>
@@ -466,6 +478,7 @@
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="位置调整控件.ctl" Type="VI" URL="../UI组件/位置调整控件.ctl"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="Demo" Type="EXE">
