@@ -157,7 +157,6 @@
 			<Item Name="DataLimit.vi" Type="VI" URL="../UI组件/DataLimit.vi"/>
 			<Item Name="WaitMeasure.vi" Type="VI" URL="../UI组件/WaitMeasure.vi"/>
 			<Item Name="GetCurrentMissionString.vi" Type="VI" URL="../UI组件/GetCurrentMissionString.vi"/>
-			<Item Name="GetSystemPath.vi" Type="VI" URL="../UI组件/GetSystemPath.vi"/>
 			<Item Name="IPCheck.vi" Type="VI" URL="../UI组件/IPCheck.vi"/>
 		</Item>
 		<Item Name="ConnectCheck" Type="Folder">
@@ -241,6 +240,8 @@
 		<Item Name="StopAll.vi" Type="VI" URL="../StopAll.vi"/>
 		<Item Name="Tektronix DPO MSO 2000 4000 Series.lvlib" Type="Library" URL="/&lt;instrlib&gt;/Tektronix DPO MSO 2000 4000 Series/Tektronix DPO MSO 2000 4000 Series.lvlib"/>
 		<Item Name="读取初始位置.vi" Type="VI" URL="../InOut/读取初始位置.vi"/>
+		<Item Name="ControlMotorGetDefinedPostion.vi" Type="VI" URL="../电机/ControlMotorGetDefinedPostion.vi"/>
+		<Item Name="GetSystemPath.vi" Type="VI" URL="../GetSystemPath.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -338,8 +339,6 @@
 				<Item Name="NI_XML.lvlib" Type="Library" URL="/&lt;vilib&gt;/xml/NI_XML.lvlib"/>
 				<Item Name="To .NET Object.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/dotnet.llb/To .NET Object.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
-				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
 				<Item Name="Flatten Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pixmap.llb/Flatten Pixmap.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
@@ -411,6 +410,25 @@
 				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
 				<Item Name="IMAQ Overlay Line" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Line"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
+				<Item Name="Color (U64)" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Color (U64)"/>
+				<Item Name="IMAQ ArrayToColorImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToColorImage"/>
+				<Item Name="Image Unit" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Unit"/>
+				<Item Name="IMAQ GetImageInfo" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageInfo"/>
+			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="TULV_API.dll" Type="Document" URL="/&lt;userlib&gt;/TucsenCamera/TULV_API.dll"/>
+				<Item Name="TU_WaitForFrame.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_WaitForFrame.vi"/>
+				<Item Name="TU_GetFrame.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_GetFrame.vi"/>
+				<Item Name="TU_SetParameter.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_SetParameter.vi"/>
+				<Item Name="TU_UninitCamera.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_UninitCamera.vi"/>
+				<Item Name="TU_StopCapture.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_StopCapture.vi"/>
+				<Item Name="TU_InitCamera.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_InitCamera.vi"/>
+				<Item Name="TU_GetParameterLimits.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_GetParameterLimits.vi"/>
+				<Item Name="TU_OpenCamera.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_OpenCamera.vi"/>
+				<Item Name="TU_GetCameraInfo.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_GetCameraInfo.vi"/>
+				<Item Name="TU_SetTrigger.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_SetTrigger.vi"/>
+				<Item Name="TU_GetParameter.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_GetParameter.vi"/>
+				<Item Name="TU_StartCapture.vi" Type="VI" URL="/&lt;userlib&gt;/TucsenCamera/TU_StartCapture.vi"/>
 			</Item>
 			<Item Name="DOPsetMeasuremen.vi" Type="VI" URL="../示波器/DOPsetMeasuremen.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -437,30 +455,17 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="TU_InitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_InitCamera.vi"/>
-			<Item Name="TU_GetParameterLimits.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetParameterLimits.vi"/>
 			<Item Name="PrincetonInstruments.LightFieldAddInSupportServices.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightFieldAddInSupportServices.dll"/>
 			<Item Name="PrincetonInstruments.LightFieldViewV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/AddInViews/PrincetonInstruments.LightFieldViewV3.dll"/>
 			<Item Name="PrincetonInstruments.LightField.AutomationV3.dll" Type="Document" URL="/C/Program Files/Princeton Instruments/LightField/PrincetonInstruments.LightField.AutomationV3.dll"/>
-			<Item Name="TU_WaitForFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame.vi"/>
-			<Item Name="TULV_API.dll" Type="Document" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TULV_API.dll"/>
-			<Item Name="TU_GetFrame.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetFrame.vi"/>
-			<Item Name="TU_OpenCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_OpenCamera.vi"/>
-			<Item Name="TU_GetCameraInfo.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetCameraInfo.vi"/>
-			<Item Name="TU_SetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetTrigger.vi"/>
-			<Item Name="TU_SetParameter.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetParameter.vi"/>
-			<Item Name="TU_GetParameter.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetParameter.vi"/>
-			<Item Name="TU_StartCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_StartCapture.vi"/>
-			<Item Name="TU_UninitCamera.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_UninitCamera.vi"/>
-			<Item Name="TU_WaitForFrame_1.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_WaitForFrame_1.vi"/>
-			<Item Name="TU_GetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetROI.vi"/>
-			<Item Name="TU_SetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetROI.vi"/>
-			<Item Name="TU_StopRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopRecorder.vi"/>
-			<Item Name="TU_StartRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_StartRecorder.vi"/>
-			<Item Name="TU_SetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_SetOutPutTrigger.vi"/>
-			<Item Name="TU_GetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetOutPutTrigger.vi"/>
-			<Item Name="TU_GetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_GetTrigger.vi"/>
-			<Item Name="TU_StopCapture.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera/TU_StopCapture.vi"/>
+			<Item Name="TU_WaitForFrame_1.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_WaitForFrame_1.vi"/>
+			<Item Name="TU_GetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_GetROI.vi"/>
+			<Item Name="TU_SetROI.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_SetROI.vi"/>
+			<Item Name="TU_StopRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_StopRecorder.vi"/>
+			<Item Name="TU_StartRecorder.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_StartRecorder.vi"/>
+			<Item Name="TU_SetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_SetOutPutTrigger.vi"/>
+			<Item Name="TU_GetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_GetOutPutTrigger.vi"/>
+			<Item Name="TU_GetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_GetTrigger.vi"/>
 			<Item Name="FarFiledCorrectArea.vi" Type="VI" URL="../相机/FarFiledCorrectArea.vi"/>
 			<Item Name="computeTheta.vi" Type="VI" URL="../相机/computeTheta.vi"/>
 			<Item Name="VsyCam.dll" Type="Document" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/VsyCam.dll"/>
@@ -479,237 +484,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="位置调整控件.ctl" Type="VI" URL="../UI组件/位置调整控件.ctl"/>
+			<Item Name="TULV_API.dll" Type="Document" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TULV_API.dll"/>
 		</Item>
-		<Item Name="程序生成规范" Type="Build">
-			<Item Name="Demo" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{6C397A37-02AB-4C33-A111-FF4675E1F1D7}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{386E9330-8C9E-4232-84A8-C471622D5899}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{DE576931-2076-457B-BBA7-F86641DFB5B6}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Demo</Property>
-				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../NI_AB_PROJECTNAME/Demo</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{29A7EBA1-EECD-47F0-8978-4E0947A87B9A}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Demo1.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/Demo/Demo1.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
-				<Property Name="Destination[1].path" Type="Path">../NI_AB_PROJECTNAME/Demo/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{72D6ADE6-120E-4910-81E0-F81D37289AA8}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{3E064FC1-121E-4559-8CE8-A6B85094AA53}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{A8DAFF30-0D75-494F-9342-0362D659C0E1}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{48E873A6-89BA-4FA6-9D3E-AA09397C488E}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{E698754D-E6EE-41F7-A7EE-7E6602E96186}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{254C352D-1D1E-4653-9BFC-D1201E37DB8A}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{F29C1C89-357E-433B-86AF-C5AEE0138FEB}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{14F062D5-CF2D-4692-9936-29F7BB6AAAFB}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{DC5D31CC-930C-4BC7-8D95-E5331C69A89D}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{E182708F-C529-4818-90FB-9FB3E284ECAA}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{8BC88738-2289-43CA-A40A-F8B98A47C60D}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{CCEAB441-F1D3-41D2-A2F3-000081D784A2}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{5642EB82-3312-429C-B9F9-E1D217ED5609}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{72926BE3-A8E4-40AC-BDB2-F45F8E139400}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{0C2D14A0-907C-4A98-B889-0E0FBC1C2585}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{1959886B-FFE5-440F-BBD7-461A25C08014}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{2B0EE23E-CE99-4209-BD43-C945568B35F9}</Property>
-				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
-				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
-				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
-				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{4034D754-2505-4D6E-B4D3-3047BB80C033}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{33BBC665-F91A-4E5E-8195-B799909E2D88}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{EA8625A8-E58B-4206-A4C8-413895E64ACA}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{47151638-3F87-4850-9259-AC43BC75CD6B}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{E4D610C7-0764-4182-A7C5-76EFA63FE8C7}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{E1F487A8-5115-4856-829C-C40ACC2AAEA6}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{D0E0E0FB-FA71-48A1-B8C2-631159E49C80}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{CA9408C7-C1F2-434E-98D5-8623485AC2ED}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{EA74981D-FDB8-4364-B4D5-203CF400200F}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{04269AE6-A4C3-4326-A36D-59B60D7B5968}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{1305D51B-8377-4F6E-9F30-D889187D1690}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{D11F5088-FF6D-4983-A7AE-78456A22D119}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{6E907A62-1CB0-491F-8C94-864830D84C25}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{51136EE2-4374-4F87-868E-DDBDA1A14434}</Property>
-				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
-				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Demo1</Property>
-				<Property Name="Exe_actXServerName" Type="Str">Demo1</Property>
-				<Property Name="Exe_actXServerNameGUID" Type="Str">{179F05DC-9075-4C08-B349-2BACAEFBFF1F}</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{F0E0C91A-A6C8-4278-97C0-98900F216139}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/Main.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Demo</Property>
-				<Property Name="TgtF_internalName" Type="Str">Demo</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">版权 2020 </Property>
-				<Property Name="TgtF_productName" Type="Str">Demo</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{DA207E36-0B71-4F8E-A501-D672F5B5A476}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Demo1.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Setup_Demo1" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">demo1</Property>
-				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{4278AA28-4F46-4372-951B-B7752A446BC8}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{9D84F59F-9F6D-451C-AF3F-322898F486E2}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI Vision Common Resources 2018</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{409BEFA9-EB3E-472F-AD77-271A4A1D5927}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{5270CDA8-6512-4F0E-8BAE-1CE3ECC2FDFD}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-Serial运行引擎 17.5</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{01D82F43-B48D-46FF-8601-FC4FAAE20F41}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">_deployment_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{A0A2CF10-0C02-41DF-AC3F-1EBA24038C19}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-VISA运行引擎 18.0</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{8627993A-3F66-483C-A562-0D3BA3F267B1}</Property>
-				<Property Name="DistPart[3].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[3].productID" Type="Str">{1A304EEE-52F4-4217-A14E-A1B409FA933E}</Property>
-				<Property Name="DistPart[3].productName" Type="Str">NI LabVIEW运行引擎 2018 f2</Property>
-				<Property Name="DistPart[3].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[0].productName" Type="Str">NI LabVIEW运行引擎 2018非英语语言支持</Property>
-				<Property Name="DistPart[3].SoftDep[0].upgradeCode" Type="Str">{3C68D03D-EF38-41B5-9977-E27520759DD6}</Property>
-				<Property Name="DistPart[3].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[1].productName" Type="Str">NI ActiveX容器</Property>
-				<Property Name="DistPart[3].SoftDep[1].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[3].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[10].productName" Type="Str">NI mDNS Responder 17.0</Property>
-				<Property Name="DistPart[3].SoftDep[10].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[3].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[11].productName" Type="Str">NI Deployment Framework 2018</Property>
-				<Property Name="DistPart[3].SoftDep[11].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[3].SoftDep[12].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[12].productName" Type="Str">NI错误报告 2018</Property>
-				<Property Name="DistPart[3].SoftDep[12].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
-				<Property Name="DistPart[3].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[2].productName" Type="Str">数学核心库 2017</Property>
-				<Property Name="DistPart[3].SoftDep[2].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
-				<Property Name="DistPart[3].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[3].productName" Type="Str">数学核心库 2018</Property>
-				<Property Name="DistPart[3].SoftDep[3].upgradeCode" Type="Str">{33A780B9-8BDE-4A3A-9672-24778EFBEFC4}</Property>
-				<Property Name="DistPart[3].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[4].productName" Type="Str">NI Logos 18.0</Property>
-				<Property Name="DistPart[3].SoftDep[4].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[3].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[5].productName" Type="Str">NI TDM Streaming 18.0</Property>
-				<Property Name="DistPart[3].SoftDep[5].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[3].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[6].productName" Type="Str">NI LabVIEW Web服务器 2018</Property>
-				<Property Name="DistPart[3].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
-				<Property Name="DistPart[3].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[7].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2018</Property>
-				<Property Name="DistPart[3].SoftDep[7].upgradeCode" Type="Str">{EF4708F6-5A34-4DBA-B12B-79CC2004E20B}</Property>
-				<Property Name="DistPart[3].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[8].productName" Type="Str">NI VC2010MSMs</Property>
-				<Property Name="DistPart[3].SoftDep[8].upgradeCode" Type="Str">{EFBA6F9E-F934-4BD7-AC51-60CCA480489C}</Property>
-				<Property Name="DistPart[3].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[3].SoftDep[9].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[3].SoftDep[9].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[3].SoftDepCount" Type="Int">13</Property>
-				<Property Name="DistPart[3].upgradeCode" Type="Str">{3B195EBF-4A09-46E6-8EAD-931568C1344C}</Property>
-				<Property Name="DistPartCount" Type="Int">4</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
-				<Property Name="INST_buildLocation" Type="Path">../demo1/setup/Setup_Demo1</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Setup_Demo1</Property>
-				<Property Name="INST_defaultDir" Type="Str">{4278AA28-4F46-4372-951B-B7752A446BC8}</Property>
-				<Property Name="INST_language" Type="Int">2052</Property>
-				<Property Name="INST_productName" Type="Str">demo1</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">18008012</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
-				<Property Name="MSI_distID" Type="Str">{0DF54D37-8761-43ED-92DF-3AE60857185F}</Property>
-				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{BBD24DEB-1CD0-4386-BE3A-A69148DB0A0A}</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{4278AA28-4F46-4372-951B-B7752A446BC8}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{4278AA28-4F46-4372-951B-B7752A446BC8}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">Demo1.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">Demo1</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">demo1</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{DA207E36-0B71-4F8E-A501-D672F5B5A476}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">Demo</Property>
-				<Property Name="Source[0].tag" Type="Ref">/我的电脑/程序生成规范/Demo</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">1</Property>
-			</Item>
-			<Item Name="文件生成测试" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{43EB0A21-08BC-4B81-B36F-EA459D3D85EE}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{1F316841-299B-4B2C-B098-2BE314C7664C}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{B1A8A0D3-3C74-4867-9D46-5F76DF34C1F5}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">文件生成测试</Property>
-				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../NI_AB_PROJECTNAME/我的应用程序</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{94FE7881-40CD-4AD2-8FC2-4AF8DC99B2EE}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">应用程序.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/应用程序.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
-				<Property Name="Destination[1].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data</Property>
-				<Property Name="Destination[2].destName" Type="Str">能量功率数据</Property>
-				<Property Name="Destination[2].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data/能量功率数据</Property>
-				<Property Name="Destination[3].destName" Type="Str">偏振数据</Property>
-				<Property Name="Destination[3].path" Type="Path">../NI_AB_PROJECTNAME/我的应用程序/data/偏振数据</Property>
-				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F45947E2-9502-4942-9ED7-049225FA824C}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/依赖关系/内存中的项/WriteAllFile.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">1</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/Report.csv</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/Parameter.csv</Property>
-				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/我的电脑/文件输入输出/基本路径文件/PowerEnergMeter.csv</Property>
-				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">文件生成测试</Property>
-				<Property Name="TgtF_internalName" Type="Str">文件生成测试</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">版权 2020 </Property>
-				<Property Name="TgtF_productName" Type="Str">文件生成测试</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{C6087A04-2A69-4876-A851-E31D4F7533E8}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">应用程序.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="程序生成规范" Type="Build"/>
 	</Item>
 </Project>
