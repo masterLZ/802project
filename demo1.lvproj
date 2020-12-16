@@ -242,6 +242,7 @@
 		<Item Name="读取初始位置.vi" Type="VI" URL="../InOut/读取初始位置.vi"/>
 		<Item Name="ControlMotorGetDefinedPostion.vi" Type="VI" URL="../电机/ControlMotorGetDefinedPostion.vi"/>
 		<Item Name="GetSystemPath.vi" Type="VI" URL="../GetSystemPath.vi"/>
+		<Item Name="PositionToHub.vi" Type="VI" URL="../电机/PositionToHub.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="TLPAX VXIpnp Error Converter.vi" Type="VI" URL="/&lt;instrlib&gt;/TLPAX/TLPAX.llb/TLPAX VXIpnp Error Converter.vi"/>
@@ -466,7 +467,6 @@
 			<Item Name="TU_SetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_SetOutPutTrigger.vi"/>
 			<Item Name="TU_GetOutPutTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_GetOutPutTrigger.vi"/>
 			<Item Name="TU_GetTrigger.vi" Type="VI" URL="../../驱动/远场相机/Labview(Gige)_x86_20200804/TucsenCamera1/TU_GetTrigger.vi"/>
-			<Item Name="FarFiledCorrectArea.vi" Type="VI" URL="../相机/FarFiledCorrectArea.vi"/>
 			<Item Name="computeTheta.vi" Type="VI" URL="../相机/computeTheta.vi"/>
 			<Item Name="VsyCam.dll" Type="Document" URL="../../驱动/相机驱动/LabView2014Demo_V1.0.8/LabView14Demo/VsyCam.dll"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
